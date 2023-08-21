@@ -2,28 +2,28 @@ body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", se
 
 p { line-height: 1.51875em; margin: 1.125em 0; }
 
-a:link { position: relative; color: #ffffff; text-decoration: none; }
+a:link { position: relative; color: #ffffff; text-decoration: none; display: inline-block; }
 
-a:visited { position: relative; color: #ffffff; text-decoration: none; }
+a:visited { position: relative; color: #ffffff; text-decoration: none; display: inline-block; }
 
 a:hover { position: relative; color: #ffffff; text-decoration: none; }
 
 a:active { position: relative; color: #ffffff; text-decoration: none; }
 
-.navlink:link::before { background-color: #457D45; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+.navlink:link::before { background-color: #638B3C; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s, background-color 0.05s; width: calc(100% - 0.1em); z-index: -1; }
 
-.navlink:visited::before { background-color: #457D45; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+.navlink:visited::before { background-color: #638B3C; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s; width: calc(100% - 0.1em); z-index: -1; }
 
-.navlink:hover::before { background-color: #579E57; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+.navlink:hover::before { background-color: #7AAB49; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
 
-.navlink:active::before { background-color: #3A693A; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+.navlink:active::before { background-color: #527231; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
 
-a:link::before { background-color: #457D45; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+a:link::before { background-color: #638B3C; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s; width: calc(100% - 0.1em); z-index: -1; }
 
-a:visited::before { background-color: #495A49; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+a:visited::before { background-color: #617D45; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s, background-color 0.05s; width: calc(100% - 0.1em); z-index: -1; }
 
-a:hover::before { background-color: #579E57; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+a:hover::before { background-color: #7AAB49; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
 
-a:active::before { background-color: #3A693A; margin-top: 0.75em; left: -0.03em; content: ""; position: absolute; height: 30%; width: calc(100% - 0.1em); z-index: -1; }
+a:active::before { background-color: #527231; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
 
 hr { color: #bbbbbd; border: none; border-top: 0.1em solid; border-bottom: 0.1em solid; margin: 0; }

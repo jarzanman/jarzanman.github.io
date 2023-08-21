@@ -1,17 +1,23 @@
-$link-color: #457D45;
-$visited-link-color: #495A49;
-$hover-link-color: #579E57;
-$active-link-color: #3A693A;
+$link-color: #638B3C;
+$visited-link-color: #617D45;
+$hover-link-color: #7AAB49;
+$active-link-color: #527231;
+
+
+
+
 
 a:link {
   position: relative;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 a:visited {
   position: relative;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 a:hover {
   position: relative;
@@ -24,84 +30,96 @@ a:active {
   text-decoration: none;
 }
 
+
+
+
+
 .navlink:link::before {
   background-color: $link-color;
   margin-top: 0.75em;
-  left: -0.03em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.3em;
+  transition: height 0.1s, background-color 0.05s;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 .navlink:visited::before {
   background-color: $link-color;
   margin-top: 0.75em;
-  left: -0.03em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.3em;
+  transition: height 0.1s;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 .navlink:hover::before {
   background-color: $hover-link-color;
   margin-top: 0.75em;
-  left: -0.03em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.4em;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 .navlink:active::before {
   background-color: $active-link-color;
   margin-top: 0.75em;
-  left: -0.03em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.4em;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 
+
+
+
+
 a:link::before {
   background-color: $link-color;
-  margin-top: 0.75em;
-  left: -0.03em;
+  margin-top: 0.89em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.3em;
+  transition: height 0.1s;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 a:visited::before {
   background-color: $visited-link-color;
-  margin-top: 0.75em;
-  left: -0.03em;
+  margin-top: 0.89em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.3em;
+  transition: height 0.1s, background-color 0.05s;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 a:hover::before {
   background-color: $hover-link-color;
-  margin-top: 0.75em;
-  left: -0.03em;
+  margin-top: 0.89em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.4em;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
 a:active::before {
   background-color: $active-link-color;
-  margin-top: 0.75em;
-  left: -0.03em;
+  margin-top: 0.89em;
+  left: -0.07em;
   content: "";
   position: absolute;
-  height: 30%;
+  height: 0.4em;
   width: calc(100% - 0.1em);
   z-index: -1;
 }
