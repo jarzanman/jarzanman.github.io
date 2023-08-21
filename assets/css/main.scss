@@ -1,29 +1,14 @@
 ---
 ---
 
-/* colors
-
-bg: #1c1b22
-txt: #ffffff
-hr: #bbbbbd
-
-*/
-
 @import "base";
 
-a:link {
-  color: #B47AEA;
-  text-decoration: none;
-}
-a:visited {
-  color: #9153CA;
-  text-decoration: none;
-}
-a:hover {
-  color: #DCC5F2;
-  text-decoration: none;
-}
-a:active {
-  color: #E9D5FB;
-  text-decoration:none;
+@import "links";
+
+hr {
+  color: #bbbbbd;
+  border: none;
+  border-top: 0.1em solid;
+  border-bottom: 0.1em solid;
+  margin: 0;
 }

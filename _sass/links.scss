@@ -1,0 +1,107 @@
+$link-color: #457D45;
+$visited-link-color: #495A49;
+$hover-link-color: #579E57;
+$active-link-color: #3A693A;
+
+a:link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+a:active {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navlink:link::before {
+  background-color: $link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+.navlink:visited::before {
+  background-color: $link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+.navlink:hover::before {
+  background-color: $hover-link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+.navlink:active::before {
+  background-color: $active-link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+
+a:link::before {
+  background-color: $link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+a:visited::before {
+  background-color: $visited-link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+a:hover::before {
+  background-color: $hover-link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
+a:active::before {
+  background-color: $active-link-color;
+  margin-top: 0.75em;
+  left: -0.03em;
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: calc(100% - 0.1em);
+  z-index: -1;
+}
