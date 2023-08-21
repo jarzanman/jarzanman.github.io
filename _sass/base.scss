@@ -7,11 +7,32 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
   font-size: 1.125em;
+  width: 80vw;
+  max-width: 31em;
   margin: auto;
-  width: 31em;
   word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  hyphens: auto;
+  text-align: justify;
 }
 p {
-  line-height: 1.51875em;
+  line-height: 1.51875;
   margin: 1.125em 0;
+}
+
+@media (max-width: 43em) {
+  body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  font-size: 2.6vw;
+  width: 80vw;
+  margin: auto;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  hyphens: auto;
+  text-align: justify;
+  }
 }
