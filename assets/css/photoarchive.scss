@@ -1,0 +1,18 @@
+---
+---
+
+@import "base";
+
+@import "links";
+
+@import "headers";
+
+body {
+  text-align: center;
+}
+
+@media (max-width: 43em) {
+  body {
+  text-align: center;
+  }
+}
