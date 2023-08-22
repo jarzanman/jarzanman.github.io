@@ -1,43 +1,40 @@
-$link-color: #A5F381;
-$visited-link-color: #8BB479;
-$hover-link-color: #CAF8B4;
-$active-link-color: #95F16A;
+$link-color: #a5f381;
+$visited-link-color: #8bb479;
+$hover-link-color: #caf8b4;
+$active-link-color: #95f16a;
 
 a {
   text-decoration-color: transparent;
 }
 
-
-
-
-
-.navlink:link, .navlink:visited {
+.navlink:link,
+.navlink:visited {
   color: white;
-  transition: color 0.15s, text-decoration-color 0.3s;
- }
+  transition:
+    color 0.15s,
+    text-decoration-color 0.3s;
+}
 .navlink:hover {
   color: $hover-link-color;
   text-decoration: underline;
- }
+}
 .navlink:active {
   color: $active-link-color;
- }
-
-
-
-
+}
 
 a:link {
   color: $link-color;
-  transition: color 0.15s, text-decoration-color 0.3s;
- }
+  transition:
+    color 0.15s,
+    text-decoration-color 0.3s;
+}
 a:visited {
   color: $visited-link-color;
- }
+}
 a:hover {
   color: $hover-link-color;
   text-decoration: underline;
-  }
+}
 a:active {
   color: $active-link-color;
- }
+}

@@ -24,16 +24,16 @@ body {
 
 @media (max-width: 48em) {
   body {
-  text-align: center;
+    text-align: center;
   }
-.image-outer {
-  left: 10%;
-  right: 10%;
-  margin-left: -10vw;
-  margin-right: -10vw;
+  .image-outer {
+    left: 10%;
+    right: 10%;
+    margin-left: -10vw;
+    margin-right: -10vw;
   }
-.image-inner {
-  max-width: 80%;
-  max-height: 80vh;
+  .image-inner {
+    max-width: 80%;
+    max-height: 80vh;
   }
 }
