@@ -1,125 +1,43 @@
-$link-color: #638B3C;
-$visited-link-color: #617D45;
-$hover-link-color: #7AAB49;
-$active-link-color: #527231;
+$link-color: #A5F381;
+$visited-link-color: #8BB479;
+$hover-link-color: #CAF8B4;
+$active-link-color: #95F16A;
+
+a {
+  text-decoration-color: transparent;
+}
+
+
+
+
+
+.navlink:link, .navlink:visited {
+  color: white;
+  transition: color 0.15s, text-decoration-color 0.3s;
+ }
+.navlink:hover {
+  color: $hover-link-color;
+  text-decoration: underline;
+ }
+.navlink:active {
+  color: $active-link-color;
+ }
 
 
 
 
 
 a:link {
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-}
+  color: $link-color;
+  transition: color 0.15s, text-decoration-color 0.3s;
+ }
 a:visited {
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-}
+  color: $visited-link-color;
+ }
 a:hover {
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-}
+  color: $hover-link-color;
+  text-decoration: underline;
+  }
 a:active {
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-
-
-
-
-.navlink:link::before {
-  background-color: $link-color;
-  margin-top: 0.75em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.3em;
-  transition: height 0.1s, background-color 0.05s;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-.navlink:visited::before {
-  background-color: $link-color;
-  margin-top: 0.75em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.3em;
-  transition: height 0.1s;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-.navlink:hover::before {
-  background-color: $hover-link-color;
-  margin-top: 0.75em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.4em;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-.navlink:active::before {
-  background-color: $active-link-color;
-  margin-top: 0.75em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.4em;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-
-
-
-
-
-a:link::before {
-  background-color: $link-color;
-  margin-top: 0.89em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.3em;
-  transition: height 0.1s;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-a:visited::before {
-  background-color: $visited-link-color;
-  margin-top: 0.89em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.3em;
-  transition: height 0.1s, background-color 0.05s;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-a:hover::before {
-  background-color: $hover-link-color;
-  margin-top: 0.89em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.4em;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
-a:active::before {
-  background-color: $active-link-color;
-  margin-top: 0.89em;
-  left: -0.07em;
-  content: "";
-  position: absolute;
-  height: 0.4em;
-  width: calc(100% - 0.1em);
-  z-index: -1;
-}
+  color: $active-link-color;
+ }

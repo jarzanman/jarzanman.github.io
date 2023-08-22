@@ -3,29 +3,21 @@ body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", se
 p { line-height: 1.51875; margin: 1.125em 0; }
 
 @media (max-width: 43em) { body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", serif, Georgia, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 2.6vw; width: 80vw; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; text-align: justify; } }
-a:link { position: relative; color: #ffffff; text-decoration: none; display: inline-block; }
+a { text-decoration-color: transparent; }
 
-a:visited { position: relative; color: #ffffff; text-decoration: none; display: inline-block; }
+.navlink:link, .navlink:visited { color: white; transition: color 0.15s, text-decoration-color 0.3s; }
 
-a:hover { position: relative; color: #ffffff; text-decoration: none; }
+.navlink:hover { color: #CAF8B4; text-decoration: underline; }
 
-a:active { position: relative; color: #ffffff; text-decoration: none; }
+.navlink:active { color: #95F16A; }
 
-.navlink:link::before { background-color: #638B3C; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s, background-color 0.05s; width: calc(100% - 0.1em); z-index: -1; }
+a:link { color: #A5F381; transition: color 0.15s, text-decoration-color 0.3s; }
 
-.navlink:visited::before { background-color: #638B3C; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s; width: calc(100% - 0.1em); z-index: -1; }
+a:visited { color: #8BB479; }
 
-.navlink:hover::before { background-color: #7AAB49; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
+a:hover { color: #CAF8B4; text-decoration: underline; }
 
-.navlink:active::before { background-color: #527231; margin-top: 0.75em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
-
-a:link::before { background-color: #638B3C; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s; width: calc(100% - 0.1em); z-index: -1; }
-
-a:visited::before { background-color: #617D45; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.3em; transition: height 0.1s, background-color 0.05s; width: calc(100% - 0.1em); z-index: -1; }
-
-a:hover::before { background-color: #7AAB49; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
-
-a:active::before { background-color: #527231; margin-top: 0.89em; left: -0.07em; content: ""; position: absolute; height: 0.4em; width: calc(100% - 0.1em); z-index: -1; }
+a:active { color: #95F16A; }
 
 h1, h2, h3, h4, h5, h6 { text-align: left; }
 
