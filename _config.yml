@@ -1,13 +1,38 @@
-url: "https://jarzanman.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://julianjarjour.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "julian jarjour" # the name of your site, e.g. ACME Corp.
 defaults:
   - scope:
       path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      values:
-      layout: "default"
+
+
+plugins:
+  - jekyll-gallery-generator
+
+gallery:
+  dir: photos               # Path to the gallery
+  symlink: false            # false: copy images into _site. true: create symbolic links (saves disk space)
+  title: "photos"           # Title for gallery index page
+  title_prefix: "photos: "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field: "date_time"   # How to sort galleries on the index page.
+                            # Possible values are: title, date_time, best_image
+  thumbnail_size:
+    x: 180                  # max width of thumbnails (in pixels)
+    y: 120                  # max height of thumbnails (in pixels)
+  # The following options are for individual galleries.
+  galleries:
+    pinkflowers:
+      best_image: 0003.jpg 
+    harryskate:
+      best_image: 0004.jpg
+    bewareofdenise:
+      best_image: 0010.jpg
+    etherealday:
+      best_image: 0006.jpg

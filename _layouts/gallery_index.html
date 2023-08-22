@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<style TYPE="text/css">
+.flexboxbody {
+  display: flex;
+  justify-content: space-between;
+  max-width: 31em;
+  flex-wrap: wrap;
+}
+.gallery-wrapper {
+  display: inline-block;
+}
+.gallery-best-image {
+  max-height: 8em;
+  max-width: 10em;
+  border: white solid 0.1em;
+}
+
+.title-tag {
+background-color: white;
+color: #1c1b22;
+font-size: 80%;
+width: fit-content;
+max-width: 100%;
+padding: 0 0.2em 0 0.2em;
+text-align: center;
+top: -1.125em;
+margin-left: 0.4em;
+position: relative;
+}
+
+</style>
+<div class="flexboxbody">
+{% for gallery in page.galleries %}
+<div class="gallery-wrapper">
+    <a href="{{ gallery['gallery'] }}">
+        <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+    </a>
+        <div class="title-tag">
+          <div style="display: inline;">[{{ gallery["images"] | size }}]</div>
+          <div style="display: inline;">{{ gallery["name"] | downcase }}</div>
+        </div>
+</div>
+{% endfor %}
+</div>
