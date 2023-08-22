@@ -178,11 +178,11 @@ gen_post_html () {
   if [ -n "${prev_id}" ]; then
     image_before="<a href=\"${web_root_path}photo/${prev_id}/\">"
     image_after="</a>"
-    prev_html="<a class=\"bold\" href=\"${web_root_path}photo/${prev_id}/\">← older</a> " 
+    prev_html="<a class=\"bold\" href=\"${web_root_path}photo/${prev_id}/\">→ </a> " 
   fi
 
   if [ -n "${next_id}" ]; then
-    next_html=" <a class=\"bold\" href=\"${web_root_path}photo/${next_id}/\">newer →</a>" 
+    next_html=" <a class=\"bold\" href=\"${web_root_path}photo/${next_id}/\">← </a>" 
   fi
 
   mkdir -p "${output_dir}/photo/${post_id}"
@@ -195,9 +195,9 @@ layout: photopost
   ${image_before}
     <div class="image-outer">$(gen_img_src "${filename}" "${post_id}")</div>
   ${image_after}
-  ${prev_html}
-  ${menu}
   ${next_html}
+  ${menu}
+  ${prev_html}
   </body>
 EOF
 }
@@ -220,8 +220,6 @@ layout: photoarchive
     <div class="list">
       ${thumb_html}
     </div>
-    ${menu}
-  </body>
 EOF
 }
 
