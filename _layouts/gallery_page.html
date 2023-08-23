@@ -17,10 +17,11 @@ layout: default
         }
       }
     </style>
+    
     <div style="margin-bottom: 1.125em">
     <h2 style="margin: 0;">{{ page.title }}</h2>
     {% for image in page.images limit: 1 %}
-    <p style="margin: 0;">{{ image.exif.date_time_original | date: '%B %-d, %Y' }} </p>
+    <p style="margin: 0;">{{ image.exif.date_time_original | date: '%B %-d, %Y' }}</p>
     {% endfor %}
     </div>
     {% if page.info.desc %}<p>{{ page.info.desc }}</p>{%endif%}
@@ -38,7 +39,7 @@ layout: default
         endif
         %}
       >
-        <img width="556" class="gallery-image" src="thumbs/{{ image.name }}" />
+      <img alt="{{ page.title }}" width="556" class="gallery-image" src="thumbs/{{ image.name }}" />
       </a>
     </div>
     {% endfor %}
