@@ -47,9 +47,9 @@
 </style>
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
-        <a name="{{ image.name }}"></a>
-        <a href="{{ image.name }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
-            <img class="gallery-image" src="thumbs/{{ image.name }}" />
+        <a name='gallery["name"]/{{ image.name }}'></a>
+        <a href='{{ gallery["name"] }}/{{ image.name }}'{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+          <img class="gallery-image" src='{{ gallery["name"] }}/thumbs/{{ image.name }}' />
         </a>
     </div>
 {% endfor %}
