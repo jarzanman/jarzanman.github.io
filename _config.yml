@@ -12,24 +12,24 @@ defaults:
     values:
       layout: "post"
 
-
 plugins:
   - jekyll-gallery-generator
 
 gallery:
-  dir: photos               # Path to the gallery
-  symlink: false            # false: copy images into _site. true: create symbolic links (saves disk space)
-  title: "photos"           # Title for gallery index page
-  title_prefix: ""  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
-  sort_field: "date_time"   # How to sort galleries on the index page.
-                            # Possible values are: title, date_time, best_image
+  dir: photos # Path to the gallery
+  symlink: false # false: copy images into _site. true: create symbolic links (saves disk space)
+  title: "photos" # Title for gallery index page
+  title_prefix: "" # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field:
+    "date_time" # How to sort galleries on the index page.
+    # Possible values are: title, date_time, best_image
   thumbnail_size:
-    x:                   # max width of thumbnails (in pixels)
-    y: 834                 # max height of thumbnails (in pixels)
+    x: # max width of thumbnails (in pixels)
+    y: 834 # max height of thumbnails (in pixels)
   # The following options are for individual galleries.
   galleries:
     pinkflowers:
-      best_image: 0003.jpg 
+      best_image: 0003.jpg
     harryskate:
       best_image: 0004.jpg
     bewareofdenise:
