@@ -28,11 +28,13 @@ gallery:
     y: 834 # max height of thumbnails (in pixels)
   # The following options are for individual galleries.
   galleries:
-    pinkflowers:
+    flower_hue_shift:
       best_image: 0003.jpg
-    harryskate:
+    harry_skates:
       best_image: 0004.jpg
-    bewareofdenise:
+    beware_of_denise:
       best_image: 0010.jpg
-    etherealday:
+      info:
+        desc: "ZUMIX band Beware of Denise performs at Tall Ship Boston. This was their second-to-last gig with this lineup before their singer, Wendy, graduated."
+    ethereal_day:
       best_image: 0006.jpg

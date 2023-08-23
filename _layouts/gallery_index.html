@@ -39,8 +39,7 @@ layout: default
       />
     </a>
     <div class="title-tag">
-      <div style="display: inline">[{{ gallery["images"] | size }}]</div>
-      <div style="display: inline">{{ gallery["name"] | downcase }}</div>
+      [{{ gallery["images"] | size }}] {{ gallery["name"] | downcase }}
     </div>
   </div>
   {% endfor %}

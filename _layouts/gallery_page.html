@@ -1,48 +1,29 @@
-<!doctype html>
-<html lang='{{ site.lang | default: "en-US" }}'>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>{{ page.title | downcase }} - {{ site.title }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Londrina+Shadow&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Londrina+Shadow&display=swap"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Londrina+Shadow&display=swap"
-      />
-    </noscript>
-    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}' />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
-  </head>
-  <body>
-    {% include header.html %}
+---
+layout: default
+---
     <style type="text/css">
       .gallery-image-wrapper {
-        margin-bottom: 1em;
       }
       .gallery-image {
         border: white solid 0.1em;
         max-width: 30.9em;
+        margin: 0.3em 0;
       }
       @media (max-width: 43.4em) {
         .gallery-image {
           border: white solid 0.1em;
           max-width: 79.8vw;
+          margin: 1em 0;
         }
       }
     </style>
+    <div style="margin-bottom: 1.125em">
+    <h2 style="margin: 0;">{{ page.title }}</h2>
+    {% for image in page.images limit: 1 %}
+    <p style="margin: 0;">{{ image.exif.date_time_original | date: '%B %-d, %Y' }} </p>
+    {% endfor %}
+    </div>
+    {% if page.info.desc %}<p>{{ page.info.desc }}</p>{%endif%}
     {% for image in page.images %}
     <div class="gallery-image-wrapper">
       <a name="{{ image.name }}"></a>
@@ -61,5 +42,3 @@
       </a>
     </div>
     {% endfor %}
-  </body>
-</html>
