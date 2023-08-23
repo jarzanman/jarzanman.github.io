@@ -1,8 +1,8 @@
-body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", serif, Georgia, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.125em; width: 80vw; max-width: 31em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; text-align: justify; }
+body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", serif, Georgia, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.125em; width: 80vw; max-width: 31em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
 
 p { line-height: 1.51875; margin: 1.125em 0; }
 
-@media (max-width: 43em) { body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", serif, Georgia, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 2.6vw; width: 80vw; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; text-align: justify; } }
+@media (max-width: 31em) { body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", serif, Georgia, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 5vw; width: 80vw; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; } }
 a { text-decoration-color: transparent; }
 
 .navlink:link, .navlink:visited { color: white; transition: color 0.15s, text-decoration-color 0.3s; }

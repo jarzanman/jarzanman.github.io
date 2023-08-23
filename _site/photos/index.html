@@ -35,6 +35,15 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @media (max-width: 31em) {
+      .subnav {
+      float: right;
+      width: 31vw;
+      display: flex;
+      justify-content: space-between;
+      }
+    }
   </style>
   <nav style="margin: 0 0 1em 0; overflow: hidden">
     <div style="float: left">
@@ -47,15 +56,14 @@
   </nav>
   <hr />
 </header>
- <style TYPE="text/css">
+
+    <style TYPE="text/css">
 .flexboxbody {
-  display: flex;
-  justify-content: space-between;
-  max-width: 31em;
-  flex-wrap: wrap;
+text-align: center;
 }
 .gallery-wrapper {
   display: inline-block;
+  height: 7.6em
 }
 .gallery-best-image {
   max-height: 8em;

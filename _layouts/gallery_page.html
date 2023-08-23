@@ -1,9 +1,11 @@
+---
+---
 <!doctype html>
 <html lang='{{ site.lang | default: "en-US" }}'>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title | downcase }} - {{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +30,29 @@
   </head>
   <body>
     {% include header.html %}
-    {{ content }}
+<style TYPE="text/css">
+.gallery-image-wrapper {
+  margin-bottom: 1em
+}
+.gallery-image {
+  border: white solid 0.1em;
+  max-width: 30.9em;
+}
+@media (max-width: 43.4em) {
+  .gallery-image {
+    border: white solid 0.1em;
+    max-width: 79.8vw;
+  }
+}
+</style>
+{% for image in page.images %}
+    <div class="gallery-image-wrapper">
+        <a name="{{ image.name }}"></a>
+        <a href="{{ image.name }}"{% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]"{% endif %}>
+            <img class="gallery-image" src="thumbs/{{ image.name }}" />
+        </a>
+    </div>
+{% endfor %}
   </body>
 </html>
+

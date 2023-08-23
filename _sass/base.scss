@@ -27,7 +27,6 @@ body {
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   hyphens: auto;
-  text-align: justify;
 }
 
 p {
@@ -35,18 +34,17 @@ p {
   margin: 1.125em 0;
 }
 
-@media (max-width: 43em) {
+@media (max-width: 31em) {
   body {
     background: $backgroundColor;
     color: $bodyColor;
     font-family: $bodyFont;
-    font-size: 2.6vw;
+    font-size: 5vw;
     width: 80vw;
     margin: auto;
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     hyphens: auto;
-    text-align: justify;
   }
 }

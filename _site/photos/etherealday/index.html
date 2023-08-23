@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>photos: Etherealday - julian jarjour</title>
+    <title>photos: etherealday - julian jarjour</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +35,15 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @media (max-width: 31em) {
+      .subnav {
+      float: right;
+      width: 31vw;
+      display: flex;
+      justify-content: space-between;
+      }
+    }
   </style>
   <nav style="margin: 0 0 1em 0; overflow: hidden">
     <div style="float: left">
@@ -47,25 +56,22 @@
   </nav>
   <hr />
 </header>
- <style TYPE="text/css">
+
+<style TYPE="text/css">
 .gallery-image-wrapper {
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  margin: 1em;
-  position: relative;
+  margin-bottom: 1em
 }
 .gallery-image {
-  margin: auto;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  max-height: 100%;
-  max-width: 100%;
+  border: white solid 0.1em;
+  max-width: 30.9em;
+}
+@media (max-width: 43.4em) {
+  .gallery-image {
+    border: white solid 0.1em;
+    max-width: 79.8vw;
+  }
 }
 </style>
-<h1><a href="/photos">photos: Etherealday</a></h1>
-<hr />
 
     <div class="gallery-image-wrapper">
         <a name="0001.jpg"></a>
@@ -137,6 +143,6 @@
         </a>
     </div>
 
-
   </body>
 </html>
+
