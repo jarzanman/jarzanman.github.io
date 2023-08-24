@@ -1,45 +1,56 @@
 ---
 layout: default
 ---
-    <style type="text/css">
-      .gallery-image-wrapper {
-      }
-      .gallery-image {
-        border: white solid 0.1em;
-        max-width: 30.9em;
-        margin: 0.3em 0;
-      }
-      @media (max-width: 43.4em) {
-        .gallery-image {
-          border: white solid 0.1em;
-          max-width: 79.8vw;
-          margin: 1em 0;
-        }
-      }
-    </style>
-    
-    <div style="margin-bottom: 1.125em">
-    <h2 style="margin: 0;">{{ page.title }}</h2>
+
+<style type="text/css">
+  p {
+    margin: 1em 0 1em 0;
+  }
+  .gallery-image {
+    border: white solid 0.1em;
+    max-width: 30.9em;
+    margin-bottom: 0.3em;
+  }
+  @media (max-width: 43.4em) {
+    .gallery-image {
+      border: white solid 0.1em;
+      max-width: 79.8vw;
+      margin: 1em 0;
+    }
+  }
+</style>
+<div style="height: fit-content; margin: 0 0 1.5em 0">
+  <div style="margin-bottom: 1.125em">
+    <h2 style="margin: 0">{{ page.title }}</h2>
     {% for image in page.images limit: 1 %}
-    <p style="margin: 0;">{{ image.exif.date_time_original | date: '%B %-d, %Y' }}</p>
+    <p style="margin: 0">
+      {{ image.exif.date_time_original | date: '%B %-d, %Y' }}
+    </p>
     {% endfor %}
-    </div>
-    {% if page.info.desc %}<p>{{ page.info.desc }}</p>{%endif%}
-    {% for image in page.images %}
-    <div class="gallery-image-wrapper">
-      <a name="{{ image.name }}"></a>
-      <a
-        href="{{ image.name }}"
-        {%
-        if
-        site.gallery.lightbox
-        %}
-        rel="lightbox[{{ page.gallery }}]"
-        {%
-        endif
-        %}
-      >
-      <img alt="{{ page.title }}" width="556" class="gallery-image" src="thumbs/{{ image.name }}" />
-      </a>
-    </div>
-    {% endfor %}
+  </div>
+  {% if page.info.desc %}{{ page.info.desc }}{%endif%}
+</div>
+<hr style="margin-bottom: 1.5em" />
+{% for image in page.images %}
+<div>
+  <a name="{{ image.name }}"></a>
+  <a
+    href="{{ image.name }}"
+    {%
+    if
+    site.gallery.lightbox
+    %}
+    rel="lightbox[{{ page.gallery }}]"
+    {%
+    endif
+    %}
+  >
+    <img
+      alt="{{ page.title }}"
+      width="556"
+      class="gallery-image"
+      src="thumbs/{{ image.name }}"
+    />
+  </a>
+</div>
+{% endfor %}

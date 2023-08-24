@@ -3,12 +3,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    
-    
+     
     <title>blog - julian jarjour</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="preload"
       as="style"
@@ -59,18 +58,56 @@
   </nav>
   <hr />
 </header>
- <h2 style="text-align: center">latest posts</h2>
+ <style>
+  .post {
+  border: 0.1em solid white;
+  border-left: 0;
+  border-right: 0;
+  margin: 0;
+  transition: width 0.1s;
+  }
 
-<ul>
+  .postheader {
+    display: flex;
+    justify-content: space-between;
+  }
+  .posttitle {
+    background-color: white;
+    position: relative;
+    color: #1c1b22;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0 0.2em 0 0.2em;
+    top: -0.6em;
+  }
+  .postdate {
+    background-color: white;
+    position: relative;
+    color: #1c1b22;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0 0.2em 0 0.2em;
+    top: -0.6em;
+  }
+  a:link,a:visited,a:hover,a:active {
+    color: #1c1b22;
+  }
+</style>
   
-  <li>
-    <h3><a href="/2023/01/31/japanese-electronic-music.html">A Brief History of Japanese Electronica</a></h3>
-    <p>As someone who listens to a lot of music from around the world, I’ll often become obsessed with a certain region and variety for some time and then move on to the next. Japanese electronic music, and Asian electronic music in general hasn’t left my listening sphere though, and it hasn’t for years. Since discovering it, I’ve always wondered why they all have the same sort of sound; that of avant-garde innovation that feels so homely and close to nature. It’s nearly an impossible task to pinpoint an entire style of music to a few origins, but a lot can be learned from attempting it. You can’t reasonably discuss music history without listening to it, so I’ve included hyperlinked videos to anything highlighted. I explore the history of Japanese electronic music in this essay and how it has developed to where it is now.</p>
-
-
-  </li>
+  <a href="/2023/01/31/japanese-electronic-music.html">
+  <div class="post">
+    <div class="postheader">
+      <div class="posttitle">
+      A Brief History of Japanese Electronica    
+      </div>
+      <div class="postdate">
+      01-31-23
+      </div>
+    </div>
+  <p style="margin-top: 0.3em; color: white;">I explore the history of Japanese electronic music in this essay and how it has developed to where it is now.</p>
+  </div>
+</a>
   
-</ul>
 
   </body>
 </html>
