@@ -25,19 +25,19 @@ gallery:
     # Possible values are: title, date_time, best_image
   thumbnail_size:
     x: # max width of thumbnails (in pixels)
-    y: 834 # max height of thumbnails (in pixels)
+    y: 930 # max height of thumbnails (in pixels)
   # The following options are for individual galleries.
   galleries:
     flower_hue_shift:
       best_image: 0001.jpg
       info:
-        desc: "<p>These photos didn't come out to my liking, and in such cases I like to mess around in post. I landed on this hue shift effect that reminded me of <a href='https://en.wikipedia.org/wiki/Fantastic_Planet' target='_blank'>Fantastic Planet.</p>"
+        desc: "<p>These photos didn't come out to my liking, and in such cases I like to mess around in post. I landed on this hue shift effect that reminded me of <a href='https://en.wikipedia.org/wiki/Fantastic_Planet' target='_blank'>Fantastic Planet.</a></p>"
     harry_skates:
       best_image: 0008.jpg
       info:
         desc: "<p>At the Boston Common with Harry McIntyre, who just released their debut album <a href='https://releasethedistraction.bandcamp.com/album/release-the-distraction' target='_blank'>Release The Distraction!</a></p><p>I took the album's cover photo (a photo of a polaroid) on this day and we ate super chimichangas at El Jefe's Taqueria. They were good.</p>"
     beware_of_denise:
-      best_image: 0009.jpg
+      best_image: 0010.jpg
       info:
         desc: "<p>ZUMIX band Beware of Denise performs at Tall Ship Boston. This was their second-to-last gig with this lineup before Wendy graduated.</p>"
     ethereal_day:

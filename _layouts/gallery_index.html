@@ -3,19 +3,18 @@ layout: default
 ---
 
 <style type="text/css">
-  .flexboxbody {
+  .centerbody {
     text-align: center;
   }
   .gallery-wrapper {
     display: inline-block;
-    height: 7.6em;
+    margin-top: 0.125em;
   }
   .gallery-best-image {
     max-height: 8em;
     max-width: 10em;
     border: white solid 0.1em;
   }
-
   .title-tag {
     background-color: white;
     color: #1c1b22;
@@ -29,7 +28,7 @@ layout: default
     position: relative;
   }
 </style>
-<div class="flexboxbody">
+<div class="centerbody">
   {% for gallery in page.galleries %}
   <div class="gallery-wrapper">
     <a href="{{ gallery['gallery'] }}">

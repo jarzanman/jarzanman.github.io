@@ -14,13 +14,15 @@ $bodyFont:
   "Segoe UI Emoji",
   "Segoe UI Symbol";
 
+* { margin: 0; padding: 0; }
+
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  font-size: 1.125em;
+  font-size: 1.25em;
   width: 80vw;
-  max-width: 31em;
+  max-width: 31.2em;
   margin: auto;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
@@ -29,21 +31,13 @@ body {
 }
 
 p {
-  line-height: 1.51875;
-  margin: 1.125em 0;
+  line-height: 1.6875;
+  margin: 1.25em 0;
 }
 
 @media (max-width: 31em) {
   body {
-    background: $backgroundColor;
-    color: $bodyColor;
-    font-family: $bodyFont;
     font-size: 5vw;
     width: 80vw;
-    margin: auto;
-    word-wrap: break-word;
-    text-rendering: optimizeLegibility;
-    font-kerning: normal;
-    hyphens: auto;
   }
 }

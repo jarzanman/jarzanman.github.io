@@ -3,38 +3,44 @@ layout: default
 title: blog
 ---
 <style>
-  .post {
-  border: 0.1em solid white;
-  border-left: 0;
-  border-right: 0;
-  margin: 0;
-  transition: width 0.1s;
+  p {
+  margin: 0.5em 0 0 1em;
+  color: white;
   }
-
+  .post {
+  border-top: 0.1em solid white;
+  transition: border-color 0.1s;
+  margin-top: 1.8em;
+  }
   .postheader {
     display: flex;
     justify-content: space-between;
   }
-  .posttitle {
+  .posttitle, .postdate {
     background-color: white;
     position: relative;
     color: #1c1b22;
     width: fit-content;
-    max-width: 100%;
     padding: 0 0.2em 0 0.2em;
-    top: -0.6em;
+    top: -0.5em;
+    transition: background-color 0.1s;
+    max-height: 1.3em;
   }
-  .postdate {
-    background-color: white;
-    position: relative;
-    color: #1c1b22;
-    width: fit-content;
-    max-width: 100%;
-    padding: 0 0.2em 0 0.2em;
-    top: -0.6em;
-  }
+
   a:link,a:visited,a:hover,a:active {
     color: #1c1b22;
+    text-decoration: none;
+  }
+  .post:hover .posttitle, .post:hover .postdate {
+      background-color: #caf8b4;
+  }
+  .post:hover {
+    border-color: #caf8b4;
+  }
+  @media (max-width: 43em) {
+    .postdate, .posttitle {
+      font-size: 2.9vw
+    }
   }
 </style>
   {% for post in site.posts %}
@@ -48,7 +54,6 @@ title: blog
       {{ post.date | date: '%m-%d-%y' }}
       </div>
     </div>
-  <p style="margin-top: 0.3em; color: white;">{{post.description}}</p>
   </div>
 </a>
   {% endfor %}

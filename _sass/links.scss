@@ -38,3 +38,15 @@ a:hover {
 a:active {
   color: $active-link-color;
 }
+
+@media (max-width: 40em) {
+* {
+  transition: none !important;
+}
+.navlink {
+  text-decoration: none;
+}
+a {
+  text-decoration: underline;
+}
+}

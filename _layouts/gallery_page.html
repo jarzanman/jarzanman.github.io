@@ -3,20 +3,10 @@ layout: default
 ---
 
 <style type="text/css">
-  p {
-    margin: 1em 0 1em 0;
-  }
   .gallery-image {
     border: white solid 0.1em;
-    max-width: 30.9em;
     margin-bottom: 0.3em;
-  }
-  @media (max-width: 43.4em) {
-    .gallery-image {
-      border: white solid 0.1em;
-      max-width: 79.8vw;
-      margin: 1em 0;
-    }
+    display: inline-block;
   }
 </style>
 <div style="height: fit-content; margin: 0 0 1.5em 0">
@@ -30,24 +20,15 @@ layout: default
   </div>
   {% if page.info.desc %}{{ page.info.desc }}{%endif%}
 </div>
-<hr style="margin-bottom: 1.5em" />
+<hr style="margin-bottom: 1.5em;" >
+
 {% for image in page.images %}
 <div>
   <a name="{{ image.name }}"></a>
-  <a
-    href="{{ image.name }}"
-    {%
-    if
-    site.gallery.lightbox
-    %}
-    rel="lightbox[{{ page.gallery }}]"
-    {%
-    endif
-    %}
-  >
+  <a href="{{ image.name }}" {% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]" {% endif %}>
     <img
       alt="{{ page.title }}"
-      width="556"
+      width="99.35897435897436%"
       class="gallery-image"
       src="thumbs/{{ image.name }}"
     />
