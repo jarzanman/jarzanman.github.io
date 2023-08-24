@@ -28,50 +28,37 @@
     <link rel="stylesheet" href='/assets/css/main.css' />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
   </head>
-  <body>
-    <header style="margin-bottom: 1.3em; margin-top: 1em">
+    <header style="margin-bottom: 1.25em; margin-top: 1em">
   <style>
-    .subnav {
-      float: right;
-      width: 8em;
+    nav {
       display: flex;
       justify-content: space-between;
-    }
-
-    @media (max-width: 31em) {
-      .subnav {
-        float: right;
-        width: 31vw;
-        display: flex;
-        justify-content: space-between;
-      }
+      margin: 0 0 1em 0;
+      overflow: hidden
     }
   </style>
-  <nav style="margin: 0 0 1em 0; overflow: hidden">
-    <div style="float: left">
+  <nav>
       <a class="navlink" href="/">julian jarjour</a>
-    </div>
-    <div class="subnav">
-      <a class="navlink" href="/blog/">blog</a>
       <a class="navlink" href="/photos/">photos</a>
     </div>
   </nav>
   <hr />
 </header>
- <style type="text/css">
-  .flexboxbody {
+
+   <body>
+<style type="text/css">
+  .centerbody {
     text-align: center;
   }
   .gallery-wrapper {
     display: inline-block;
-    height: 7.6em;
+    margin-top: 0.125em;
   }
   .gallery-best-image {
     max-height: 8em;
     max-width: 10em;
     border: white solid 0.1em;
   }
-
   .title-tag {
     background-color: white;
     color: #1c1b22;
@@ -85,7 +72,7 @@
     position: relative;
   }
 </style>
-<div class="flexboxbody">
+<div class="centerbody">
   
   <div class="gallery-wrapper">
     <a href="ethereal_day">
@@ -100,30 +87,6 @@
   </div>
   
   <div class="gallery-wrapper">
-    <a href="harry_skates">
-      <img
-        class="gallery-best-image"
-        src="harry_skates/thumbs/0008.jpg"
-      />
-    </a>
-    <div class="title-tag">
-      [10] harry skates
-    </div>
-  </div>
-  
-  <div class="gallery-wrapper">
-    <a href="beware_of_denise">
-      <img
-        class="gallery-best-image"
-        src="beware_of_denise/thumbs/0009.jpg"
-      />
-    </a>
-    <div class="title-tag">
-      [12] beware of denise
-    </div>
-  </div>
-  
-  <div class="gallery-wrapper">
     <a href="flower_hue_shift">
       <img
         class="gallery-best-image"
@@ -132,6 +95,30 @@
     </a>
     <div class="title-tag">
       [4] flower hue shift
+    </div>
+  </div>
+  
+  <div class="gallery-wrapper">
+    <a href="beware_of_denise">
+      <img
+        class="gallery-best-image"
+        src="beware_of_denise/thumbs/0010.jpg"
+      />
+    </a>
+    <div class="title-tag">
+      [12] beware of denise
+    </div>
+  </div>
+  
+  <div class="gallery-wrapper">
+    <a href="harry_skates">
+      <img
+        class="gallery-best-image"
+        src="harry_skates/thumbs/0008.jpg"
+      />
+    </a>
+    <div class="title-tag">
+      [10] harry skates
     </div>
   </div>
   
