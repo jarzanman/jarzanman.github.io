@@ -24,7 +24,9 @@ title: blog
     padding: 0 0.2em 0 0.2em;
     top: -0.5em;
     transition: background-color 0.1s;
-    max-height: 1.3em;
+  }
+  .posttitle {
+    font-weight: bold;
   }
 
   a:link,a:visited,a:hover,a:active {
@@ -37,10 +39,17 @@ title: blog
   .post:hover {
     border-color: #caf8b4;
   }
-  @media (max-width: 43em) {
-    .postdate, .posttitle {
-      font-size: 2.9vw
-    }
+  span {
+    display: none;
+  }
+  @media (max-width: 38em) {
+  span {
+  display: inline;
+  font-weight: normal;
+  }
+  .postdate {
+    display: none;
+  }
   }
 </style>
   {% for post in site.posts %}
@@ -48,12 +57,14 @@ title: blog
   <div class="post">
     <div class="postheader">
       <div class="posttitle">
-      {{ post.title }}    
+      {{ post.title }}     
+      <span>{{ post.date | date: '%m-%d-%y' }}</span>
       </div>
       <div class="postdate">
       {{ post.date | date: '%m-%d-%y' }}
       </div>
     </div>
+    <p> {{ post.description }}</p>
   </div>
 </a>
   {% endfor %}

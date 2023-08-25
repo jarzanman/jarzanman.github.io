@@ -34,8 +34,9 @@
     <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}' />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
   </head>
-    {% include header.html %}
    <body>
+{% include header.html %}
 {{ content }}
+{% include footer.html %}
   </body>
 </html>
