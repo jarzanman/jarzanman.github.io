@@ -30,6 +30,9 @@ a:link {
 }
 a:visited {
   color: $visited-link-color;
+  transition:
+    color 0.15s,
+    text-decoration-color 0.3s;
 }
 a:hover {
   color: $hover-link-color;
