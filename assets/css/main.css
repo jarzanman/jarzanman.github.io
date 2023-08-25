@@ -201,7 +201,7 @@ a { text-decoration-color: transparent; }
 
 a:link { color: #a5f381; transition: color 0.15s, text-decoration-color 0.3s; }
 
-a:visited { color: #8bb479; }
+a:visited { color: #8bb479; transition: color 0.15s, text-decoration-color 0.3s; }
 
 a:hover { color: #caf8b4; text-decoration: underline; }
 
