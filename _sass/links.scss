@@ -43,13 +43,13 @@ a:active {
 }
 
 @media (max-width: 40em) {
-* {
-  transition: none !important;
-}
-.navlink {
-  text-decoration: none;
-}
-a {
-  text-decoration: underline;
-}
+  * {
+    transition: none !important;
+  }
+  .navlink {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: underline;
+  }
 }

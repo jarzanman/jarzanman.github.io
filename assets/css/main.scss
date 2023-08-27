@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "preflight";
 
 @import "base";
@@ -8,10 +9,4 @@
 
 @import "headers";
 
-hr {
-  color: #bbbbbd;
-  border: none;
-  border-top: 0.1em solid;
-  border-bottom: 0.1em solid;
-  margin: 0;
-}
+@import "horizontalrule";

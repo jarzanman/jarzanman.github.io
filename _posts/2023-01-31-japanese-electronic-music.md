@@ -20,8 +20,7 @@ This technique found its way to Tokyo, where in 1951 an avant-garde artist colle
 
 In the mid-70s, British composer Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
 
-> Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
-> {: style="font-size: 0.95em;" }
+Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
 
 Eno gained a following in Japan when his records were first imported to a record shop named Art Vivant, founded by ambient musician Satoshi Ashikawa. His work, along with Erik Satie’s, birthed _Kankyō Ongaku_, or Environmental Music. It was Japan’s form of ambient music that heavily incorporated field recordings. Hiroshi Yoshimura, a pioneer of the genre, says that much of the music is informed by historical sound-design traditions such as [_suikinkutsu_](https://www.youtube.com/watch?v=9jV-I_F0P5khttps://www.youtube.com/watch?v=9jV-I_F0P5k) (water zither) and [_toki no kane_](https://www.youtube.com/watch?v=zpyryxShwgg) (Bell of Time). A modern example of this might be the melodic [Westminster chimes](https://www.youtube.com/watch?v=OuMfyndwARQ) used in Japanese schools. Yoshimura’s "[GREEN](https://www.youtube.com/watch?v=Q-k9Xu5O7AYhttps://www.youtube.com/watch?v=Q-k9Xu5O7AY)" is perhaps the most popular and influential _Kankyō Ongaku_ album today.
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <style type="text/css">
   .gallery-image {
     border: white solid 0.1em;
@@ -20,12 +19,22 @@ layout: default
   </div>
   {% if page.info.desc %}{{ page.info.desc }}{%endif%}
 </div>
-<hr style="margin-bottom: 1.5em;" >
+<hr style="margin-bottom: 1.5em" />
 
 {% for image in page.images %}
 <div>
   <a name="{{ image.name }}"></a>
-  <a href="{{ image.name }}" {% if site.gallery.lightbox %} rel="lightbox[{{ page.gallery }}]" {% endif %}>
+  <a
+    href="{{ image.name }}"
+    {%
+    if
+    site.gallery.lightbox
+    %}
+    rel="lightbox[{{ page.gallery }}]"
+    {%
+    endif
+    %}
+  >
     <img
       alt="{{ page.title }}"
       width="100%"
