@@ -4,7 +4,7 @@
 */
 *, ::before, ::after { box-sizing: border-box; /* 1 */ border-width: 0; /* 2 */ border-style: solid; /* 2 */ border-color: currentColor; /* 2 */ }
 
-::before, ::after { --tw-content: ''; }
+::before, ::after { --tw-content: ""; }
 
 /*
 1. Use a consistent sensible line-height in all browsers.
@@ -92,7 +92,7 @@ button, select { text-transform: none; }
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
-button, [type='button'], [type='reset'], [type='submit'] { -webkit-appearance: button; /* 1 */ background-color: transparent; /* 2 */ background-image: none; /* 2 */ }
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 1 */ background-color: transparent; /* 2 */ background-image: none; /* 2 */ }
 
 /*
 Use the modern Firefox focus style for all focusable elements.
@@ -118,7 +118,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type='search'] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
 
 /*
 Remove the inner padding in Chrome and Safari on macOS.
@@ -186,7 +186,14 @@ Make elements with the HTML hidden attribute stay hidden by default.
 */
 [hidden] { display: none; }
 
-body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", Georgia, ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25em; width: 80vw; max-width: 30.573em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
+@font-face { font-display: swap; font-family: 'Libre Baskerville'; font-style: normal; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+@font-face { font-display: swap; font-family: 'Libre Baskerville'; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+@font-face { font-display: swap; font-family: 'Libre Baskerville'; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
+@font-face { font-display: swap; font-family: 'Georgia'; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
+body { background: #1c1b22; color: #ffffff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25em; width: 80vw; max-width: 30.573em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
 
 p { line-height: 1.6875; margin: 1.25em 0; }
 
@@ -210,10 +217,10 @@ a:active { color: #95f16a; }
 @media (max-width: 40em) { * { transition: none !important; }
   .navlink { text-decoration: none; }
   a { text-decoration: underline; } }
-h1, h2, h3, h4, h5, h6 { text-align: left; margin: 0; }
+h1, h2, h3, h4, h5, h6 { text-align: left; font-weight: 700; }
 
-h2 { font-size: 150%; font-weight: bold; }
+h2 { font-size: 120%; }
 
-h3 { font-size: 125%; font-weight: bold; }
+h3 { font-size: 100%; margin-top: 5em; }
 
 hr { color: #bbbbbd; border: none; border-top: 0.1em solid; border-bottom: 0.1em solid; margin: 0; }
