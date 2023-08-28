@@ -1,11 +1,9 @@
 ---
 layout: post
 title: A Brief History of Japanese Electronica
-description: I explore the history of Japanese electronic music in this essay and how it has developed to where it is now.
 ---
 
-As someone who listens to a lot of music from around the world, I’ll often become obsessed with a certain region and variety for some time and then move on to the next. Japanese electronic music, and Asian electronic music in general hasn’t left my listening sphere though, and it hasn’t for years. Since discovering it, I’ve always wondered why they all have the same sort of sound; that of avant-garde innovation that feels so homely and close to nature. It’s nearly an impossible task to pinpoint an entire style of music to a few origins, but a lot can be learned from attempting it. You can’t reasonably discuss music history without listening to it, so I’ve included hyperlinked videos to anything highlighted. I explore the history of Japanese electronic music in this essay and how it has developed to where it is now.
-
+As someone who listens to a lot of music from around the world, I’ll often become obsessed with a certain region and variety for some time and then move on to the next. Japanese electronic music, and Asian electronic music in general hasn’t left my listening sphere though, and it hasn’t for years. Since discovering it, I’ve always wondered why they all have the same sort of sound; that of avant-garde innovation that feels so homely and close to nature. It’s nearly an impossible task to pinpoint an entire style of music to a few origins, but a lot can be learned from attempting it.
 ### _Kankyō Ongaku_ and the history of field recordings
 
 One of the most prominent features of contemporary Japanese electronica is found sound, or field recordings. This is a common technique in which one would record audio in their area and manipulate that audio recording to achieve a desired sound during production. Japanese found sounds are very distinct, built upon over a century of ambient music innovations and many centuries of Japan’s unique sounds of the environment and the tradition; what Hiroshi Yoshimura calls “public sound art.” In order to understand the uprising of this technique in Japanese music, we must look back to 1917…

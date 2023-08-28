@@ -1,1 +1,21 @@
-<!doctype html><html lang='{{ site.lang | default: "en-US" }}'><head><meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8">{% if page.description %}<meta name="description" content="{{ page.description }}">{% elsif page.info.desc %}<meta name="description" content="{{ page.info.desc }}">{% endif %} {% if page.title %}<title>{{ page.title }} - {{ site.title }}</title>{% else %}<title>{{ site.title }}</title>{% endif %}<link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}'><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"></head><body>{% include header.html %} {{ content }}</body></html>
+<!doctype html>
+<html lang='{{ site.lang | default: "en-US" }}'>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% elsif page.info.desc %}
+    <meta name="description" content="{{ page.info.desc }}" />
+    {% endif %} {% if page.title %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}' />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
+  </head>
+  <body>
+    {% include header.html %} {{ content }}
+  </body>
+</html>

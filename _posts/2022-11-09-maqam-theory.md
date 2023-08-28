@@ -1,7 +1,6 @@
 ---
 layout: post
 title: An Overview of Arabic <em>Maqam</em> Theory
-description: This system that defines Arabic music is called maqam (مقام pl. <em>maqamat</em> مقامات), meaning “place” or “position” and it is, at surface level, similar to the Western musical scale. However, maqam is an all-encompassing term for not only the pitch collection but the tonicization, melodic development, modulation possibilities, phrasing, and even historical conventions.
 ---
 
 Music in the Western world is largely built upon a theoretical framework based on twelve-tone equal temperament; an overall pitch collection of twelve notes divided equally within the octave. Such a limited selection of notes affords musicians wide possibilities in the realm of harmony, it allows us to contextualize such harmonic and melodic possibilities in a way that is widely understood, studied, and applied. It is that same limited selection of notes that has dominated and continues to dominate the musical tradition worldwide for its ease of use, ease of enjoyment, and popularity.
