@@ -18,7 +18,7 @@ This technique found its way to Tokyo, where in 1951 an avant-garde artist colle
 
 In the mid-70s, British composer Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
 
-Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
+> Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
 
 Eno gained a following in Japan when his records were first imported to a record shop named Art Vivant, founded by ambient musician Satoshi Ashikawa. His work, along with Erik Satie’s, birthed _Kankyō Ongaku_, or Environmental Music. It was Japan’s form of ambient music that heavily incorporated field recordings. Hiroshi Yoshimura, a pioneer of the genre, says that much of the music is informed by historical sound-design traditions such as [_suikinkutsu_](https://www.youtube.com/watch?v=9jV-I_F0P5khttps://www.youtube.com/watch?v=9jV-I_F0P5k) (water zither) and [_toki no kane_](https://www.youtube.com/watch?v=zpyryxShwgg) (Bell of Time). A modern example of this might be the melodic [Westminster chimes](https://www.youtube.com/watch?v=OuMfyndwARQ) used in Japanese schools. Yoshimura’s "[GREEN](https://www.youtube.com/watch?v=Q-k9Xu5O7AYhttps://www.youtube.com/watch?v=Q-k9Xu5O7AY)" is perhaps the most popular and influential _Kankyō Ongaku_ album today.
 
@@ -47,7 +47,6 @@ Since WWII, American music has been assimilating into Japanese culture and influ
 Grandson of the sole Japanese passenger and survivor of the Titanic, Haruomi Hosono was born in Tokyo in 1947 and grew up listening to FEN, the radio station serving the U.S. military during their time in Japan. All of the music he listened to was in English, and a lot of it was from California in particular. At the time, there was a psychedelic music movement happening on the West Coast, and this would be his first major influence in his style and career. In an interview by Red Bull Music Academy, Hosono says:
 
 > I was thoroughly Americanized, I even regretted that I wasn’t American.
-> {: style="font-size: 0.95em;"}
 
 Among his other early influences were Western comedies, namely Charlie Chaplin and Jacques Tati, and Taishō-era poetry. Hosono mentioned listening to Martin Denny as a kid, and specifically taking inspiration from the animal calls and singing birds used throughout his music. He would take all of these influences with him and infuse them into his music as he grew up to be the legendary multi-instrumentalist renowned in Japan and around the rest of the world that he is today.
 
