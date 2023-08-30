@@ -6,7 +6,6 @@
   src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 @font-face {
   font-display: swap;
   font-family: "Libre Baskerville";
@@ -15,7 +14,6 @@
   src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 @font-face {
   font-display: swap;
   font-family: "Libre Baskerville";
@@ -24,7 +22,6 @@
   src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 @font-face {
   font-display: swap;
   font-family: "Georgia";
@@ -33,9 +30,8 @@
   descent-override: 29.5%;
   line-gap-override: 0;
 }
-
-$backgroundColor: #1c1b22;
-$bodyColor: #ffffff;
+$backgroundColor: #111;
+$bodyColor: #fff;
 $bodyFont:
   "Libre Baskerville",
   "Georgia",
@@ -50,7 +46,6 @@ $bodyFont:
   "Apple Color Emoji",
   "Segoe UI Emoji",
   "Segoe UI Symbol";
-
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -64,17 +59,17 @@ body {
   font-kerning: normal;
   hyphens: auto;
 }
-
 p {
   line-height: 1.6875;
   margin: 1.25em 0;
 }
-
 blockquote {
   margin-left: 2em;
   font-size: 95%;
 }
-
+blockquote > blockquote {
+  font-style: italic;
+}
 @media (max-width: 31em) {
   body {
     font-size: 5vw;

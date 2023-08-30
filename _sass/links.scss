@@ -1,55 +1,21 @@
-$link-color: #a5f381;
-$visited-link-color: #8bb479;
-$hover-link-color: #caf8b4;
-$active-link-color: #95f16a;
-
 a {
-  text-decoration-color: transparent;
+    text-decoration: none;
+    background: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient(currentColor, currentColor);
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 $backgroundColor, -0.03em 0 $backgroundColor, 0 0.03em $backgroundColor, 0 -0.03em $backgroundColor, 0.06em 0 $backgroundColor, -0.06em 0 $backgroundColor, 0.09em 0 $backgroundColor, -0.09em 0 $backgroundColor, 0.12em 0 $backgroundColor, -0.12em 0 $backgroundColor, 0.15em 0 $backgroundColor, -0.15em 0 $backgroundColor;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
 }
-
-.navlink:link,
-.navlink:visited {
-  color: white;
-  transition:
-    color 0.15s,
-    text-decoration-color 0.3s;
-}
-.navlink:hover {
-  color: $hover-link-color;
-  text-decoration: underline;
-}
-.navlink:active {
-  color: $active-link-color;
-}
-
 a:link {
-  color: $link-color;
-  transition:
-    color 0.15s,
-    text-decoration-color 0.3s;
+  color: #ddd;
 }
 a:visited {
-  color: $visited-link-color;
-  transition:
-    color 0.15s,
-    text-decoration-color 0.3s;
+  color: #aaa;
 }
 a:hover {
-  color: $hover-link-color;
-  text-decoration: underline;
+  color: #777;
 }
-a:active {
-  color: $active-link-color;
-}
-
-@media (max-width: 40em) {
-  * {
-    transition: none !important;
-  }
-  .navlink {
-    text-decoration: none;
-  }
-  a {
-    text-decoration: underline;
-  }
+.navlink:link, .navlink:visited, .navlink:hover {
+  color: #fff;
+  background: none;
 }
