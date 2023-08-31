@@ -193,17 +193,28 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ }
 @font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
-body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25em; width: 80vw; max-width: 30.573em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
+body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25em; width: 80vw; max-width: 30.573em; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; counter-reset: sncounter; }
 
 p { line-height: 1.6875; margin: 1.25em 0; }
 
-blockquote { margin-left: 2em; font-size: 95%; }
+blockquote { margin-left: 2rem; }
 
-blockquote > blockquote { font-style: italic; }
+.epigraph { font-style: italic; margin: 1.25em 0 0 2rem; }
 
+.epigraph > footer { font-style: normal; text-align: right; font-size: 90%; margin-top: 0.5em; }
+
+.sn { counter-increment: sncounter; }
+
+.sn:after { content: counter(sncounter); vertical-align: super; font-size: 70%; }
+
+.sn > small { float: right; width: 25vw; margin-right: -30vw; margin-top: 0.3em; clear: right; }
+
+.sn > small:before { content: counter(sncounter) ". "; }
+
+@media (max-width: 105em) { .sn > small { width: 20vw; margin-right: -25vw; } }
+@media (max-width: 85em) { .sn > small { width: 15vw; margin-right: -20vw; } }
+@media (max-width: 79em) { .sn > small { display: none; } }
 @media (max-width: 31em) { body { font-size: 5vw; width: 80vw; } }
-a { text-decoration: none; background: linear-gradient(#111, #111), linear-gradient(#111, #111), linear-gradient(currentColor, currentColor); background-size: 0.05em 1px, 0.05em 1px, 1px 1px; background-repeat: no-repeat, no-repeat, repeat-x; text-shadow: 0.03em 0 #111, -0.03em 0 #111, 0 0.03em #111, 0 -0.03em #111, 0.06em 0 #111, -0.06em 0 #111, 0.09em 0 #111, -0.09em 0 #111, 0.12em 0 #111, -0.12em 0 #111, 0.15em 0 #111, -0.15em 0 #111; background-position: 0% 93%, 100% 93%, 0% 93%; }
-
 a:link { color: #ddd; }
 
 a:visited { color: #aaa; }
@@ -211,6 +222,8 @@ a:visited { color: #aaa; }
 a:hover { color: #777; }
 
 .navlink:link, .navlink:visited, .navlink:hover { color: #fff; background: none; }
+
+a { text-decoration: none; background: linear-gradient(#111, #111), linear-gradient(#111, #111), linear-gradient(currentColor, currentColor); background-size: 0.05em 1px, 0.05em 1px, 1px 1px; background-repeat: no-repeat, no-repeat, repeat-x; text-shadow: 0.03em 0 #111, -0.03em 0 #111, 0 0.03em #111, 0 -0.03em #111, 0.06em 0 #111, -0.06em 0 #111, 0.09em 0 #111, -0.09em 0 #111, 0.12em 0 #111, -0.12em 0 #111, 0.15em 0 #111, -0.15em 0 #111; background-position: 0% 93%, 100% 93%, 0% 93%; }
 
 h1, h2, h3, h4, h5, h6 { text-align: left; font-weight: 700; }
 

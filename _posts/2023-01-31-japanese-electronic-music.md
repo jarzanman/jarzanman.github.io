@@ -14,7 +14,8 @@ American musician John Cage was one such person. Having been so inspired by Sati
 
 In the early 40s, French composer Pierre Schaeffer and his colleagues were given the opportunity to experiment with recording technology, and he developed a tape manipulation technique that he applied to primarily field recordings. This technique came to be known as _musique concrète_, and it was the first instance of field recordings being developed into musical compositions. An important early example is his "[_Symphonie pour un homme seul_](https://www.youtube.com/watch?v=zpOD7GQbd8Q)."
 
-This technique found its way to Tokyo, where in 1951 an avant-garde artist collective called _Jikken Kōbō_ was formed. A member of the collective, Tōru Takemitsu was heavily influenced by _musique concrète_ and John Cage. He experimented with unconventional musical structures and tape manipulation, creating his own relatively popular _musique concrète_ pieces. Composer Toshiro Mayuzumi, however, beat the collective to it in 1953, creating the first ever Japanese instance of _musique concrète_ titled "[X, Y, Z](https://www.youtube.com/watch?v=U88TWCYzeto)."
+This technique found its way to Tokyo<span class="sn"><small>The quick brown fox jumped over the lazy dog.</small></span>
+, where in 1951 an avant-garde artist<span class="sn"><small>The painter only does good things when he no longer knows what he is doing.</small></span> collective called _Jikken Kōbō_ was formed. A member of the collective, Tōru Takemitsu was heavily influenced by _musique concrète_ and John Cage. He experimented with unconventional musical structures and tape manipulation, creating his own relatively popular _musique concrète_ pieces. Composer Toshiro Mayuzumi, however, beat the collective to it in 1953, creating the first ever Japanese instance of _musique concrète_ titled "[X, Y, Z](https://www.youtube.com/watch?v=U88TWCYzeto)."
 
 In the mid-70s, British composer Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
 
@@ -44,9 +45,7 @@ Since WWII, American music has been assimilating into Japanese culture and influ
 
 ### Haruomi Hosono and Yellow Magic Orchestra
 
-Grandson of the sole Japanese passenger and survivor of the Titanic, Haruomi Hosono was born in Tokyo in 1947 and grew up listening to FEN, the radio station serving the U.S. military during their time in Japan. All of the music he listened to was in English, and a lot of it was from California in particular. At the time, there was a psychedelic music movement happening on the West Coast, and this would be his first major influence in his style and career. In an interview by Red Bull Music Academy, Hosono says:
-
-> I was thoroughly Americanized, I even regretted that I wasn’t American.
+Grandson of the sole Japanese passenger and survivor of the Titanic, Haruomi Hosono was born in Tokyo in 1947 and grew up listening to FEN, the radio station serving the U.S. military during their time in Japan. All of the music he listened to was in English, and a lot of it was from California in particular. At the time, there was a psychedelic music movement happening on the West Coast, and this would be his first major influence in his style and career. In an interview by Red Bull Music Academy, Hosono says, "I was thoroughly Americanized, I even regretted that I wasn’t American."
 
 Among his other early influences were Western comedies, namely Charlie Chaplin and Jacques Tati, and Taishō-era poetry. Hosono mentioned listening to Martin Denny as a kid, and specifically taking inspiration from the animal calls and singing birds used throughout his music. He would take all of these influences with him and infuse them into his music as he grew up to be the legendary multi-instrumentalist renowned in Japan and around the rest of the world that he is today.
 

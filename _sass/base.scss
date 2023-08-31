@@ -58,17 +58,70 @@ body {
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   hyphens: auto;
+  counter-reset: sncounter;
 }
 p {
   line-height: 1.6875;
   margin: 1.25em 0;
 }
 blockquote {
-  margin-left: 2em;
-  font-size: 95%;
+  margin-left: 2rem;
 }
-blockquote > blockquote {
+.epigraph {
   font-style: italic;
+  margin: 1.25em 0 0 2rem;
+}
+.epigraph > footer {
+  font-style: normal;
+  text-align: right;
+  font-size: 90%;
+  margin-top: 0.5em;
+}
+.sn {
+  counter-increment: sncounter;
+}
+.sn:after {
+content: counter(sncounter);
+vertical-align: super;
+font-size: 70%;
+
+@include respond-to(handhelds) {
+      color: $key90;
+      font-size: 85%;
+      background-color: $key00;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 2px 4px;
+      margin-left: 2px;
+    }
+
+}
+.sn > small {
+  float: right;
+  width: 25vw;
+  margin-right: -30vw;
+  margin-top: 0.3em;
+  clear: right;
+}
+.sn > small:before {
+  content: counter(sncounter)". ";
+}
+@media (max-width: 105em) {
+  .sn > small {
+    width: 20vw;
+    margin-right: -25vw;
+  }
+}
+@media (max-width: 85em) {
+  .sn > small {
+    width: 15vw;
+    margin-right: -20vw;
+  }
+}
+@media (max-width: 79em) {
+  .sn > small {
+    display: none;
+  }
 }
 @media (max-width: 31em) {
   body {
