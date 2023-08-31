@@ -15,6 +15,8 @@ This system that defines Arabic music is called maqam (مقام pl. _maqamat_ م
 
 A maqam will compose of two to three scale fragments called _ajnas_ (أجناس sing. _jins_ جنس) chained together where the first begins the maqam scale with its tonic, and the next is connected by the ghammaz (غماز) of the first. The ghammaz is the modulation point of a _jins_, where subsequent _jins_ connect, and it is usually the top note. These scale fragments are made up of three to five notes.
 
+![](../../../assets/svg/maqamajam.cropped.svg){: width="100%"}
+
 Depicted is Maqam ‘Ajam, consisting of _jins_ ‘Ajam as the root _jins_ and _jins_ Upper ‘Ajam as the upper _jins_, with the tonic numbered 1 and _jins_ ‘Ajam’s ghammaz numbered 5.
 
 _maqamat_ are organized in families depending on their root _jins_. The principal maqam in any given family usually shares its name with its root _jins_. The rest are designated ‘branch _maqamat_’ because the root _jins_ can be proceeded in many different ways, like branches.

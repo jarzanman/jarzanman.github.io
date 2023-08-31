@@ -4,45 +4,27 @@ layout: default
 
 <style type="text/css">
   .gallery-image {
-    border: white solid 0.1em;
-    margin-bottom: 1em;
+    border: white solid 2px;
+    margin-bottom: 1.5rem;
     display: inline-block;
   }
 </style>
-<div style="height: fit-content; margin: 0 0 1.5em 0">
-  <div style="margin-bottom: 1.125em">
-    <h2 style="margin: 0">{{ page.title }}</h2>
+<div>
+  <div>
+    <h2>{{ page.title }}</h2>
     {% for image in page.images limit: 1 %}
-    <p style="margin: 0">
+    <p class="subheading">
       {{ image.exif.date_time_original | date: '%B %-d, %Y' }}
     </p>
     {% endfor %}
   </div>
   {% if page.info.desc %}{{ page.info.desc }}{%endif%}
 </div>
-<hr style="margin-bottom: 1.5em" />
-
 {% for image in page.images %}
 <div>
   <a name="{{ image.name }}"></a>
-  <a
-    href="{{ image.name }}"
-    {%
-    if
-    site.gallery.lightbox
-    %}
-    rel="lightbox[{{ page.gallery }}]"
-    {%
-    endif
-    %}
-  >
-    <img
-      alt="{{ page.title }}"
-      width="100%"
-      height="auto"
-      class="gallery-image"
-      src="thumbs/{{ image.name }}"
-    />
+  <a href="{{ image.name }}"{%if site.gallery.lightbox%}rel="lightbox[{{ page.gallery }}]"{%endif%}>
+    <img alt="{{ page.title }}" width="100%" height="auto" class="gallery-image" src="thumbs/{{ image.name }}"/>
   </a>
 </div>
 {% endfor %}
