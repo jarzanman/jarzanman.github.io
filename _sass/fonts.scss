@@ -1,0 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Georgia";
+  src: local("Georgia");
+  ascent-override: 99.8%;
+  descent-override: 29.5%;
+  line-gap-override: 0;
+}

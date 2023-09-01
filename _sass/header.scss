@@ -1,0 +1,25 @@
+header {
+margin: 1.5rem 0 1.5rem 0;
+}
+nav {
+  display: flex;
+  flex: 1 1 100%;
+  gap: 0.3em;
+  flex-flow: row wrap;
+}
+nav > a:link, nav > a:visited {
+  color: #fff;
+  background: none;
+  border: 1px dotted white;
+  flex: 1;
+  padding: 0.1em 0;
+  text-align: center;
+}
+nav > a:hover {
+  background-color: #333;
+}
+@media (max-width: 530px) {
+  nav > a:link, nav > a:visited {
+    min-width: 40%;
+  }
+}
