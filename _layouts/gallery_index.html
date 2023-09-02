@@ -15,8 +15,8 @@ description: julian jarjour's photo galleries
       />
     </a>
     <div class="title-tag">
-      [{{ gallery["images"] | size }}] {{ gallery["name"] | downcase }}
-    </div>
+        <a href="{{ gallery['gallery'] }}" aria-label="{{gallery.name}}">[{{ gallery["images"] | size }}] {{ gallery["name"] | downcase }}</a>
+      </div>
   </div>
   {% endfor %}
 </div>

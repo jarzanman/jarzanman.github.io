@@ -4,7 +4,7 @@ title: A Brief History of Japanese Electronica
 ---
 
 As someone who listens to a lot of music from around the world, I’ll often become obsessed with a certain region and variety for some time and then move on to the next. Japanese electronic music, and Asian electronic music in general hasn’t left my listening sphere though, and it hasn’t for years. Since discovering it, I’ve always wondered why they all have the same sort of sound; that of avant-garde innovation that feels so homely and close to nature. It’s nearly an impossible task to pinpoint an entire style of music to a few origins, but a lot can be learned from attempting it.
-### _Kankyō Ongaku_ and the history of field recordings
+## _Kankyō Ongaku_ and the history of field recordings
 
 One of the most prominent features of contemporary Japanese electronica is found sound, or field recordings. This is a common technique in which one would record audio in their area and manipulate that audio recording to achieve a desired sound during production. Japanese found sounds are very distinct, built upon over a century of ambient music innovations and many centuries of Japan’s unique sounds of the environment and the tradition; what Hiroshi Yoshimura calls “public sound art.” In order to understand the uprising of this technique in Japanese music, we must look back to 1917…
 
@@ -16,7 +16,7 @@ In the early 40s, French composer Pierre Schaeffer and his colleagues were given
 
 This technique found its way to Tokyo, where in 1951 an avant-garde artist collective called _Jikken Kōbō_ was formed. A member of the collective, Tōru Takemitsu was heavily influenced by _musique concrète_ and John Cage. He experimented with unconventional musical structures and tape manipulation, creating his own relatively popular _musique concrète_ pieces. Composer Toshiro Mayuzumi, however, beat the collective to it in 1953, creating the first ever Japanese instance of _musique concrète_ titled "[X, Y, Z](https://www.youtube.com/watch?v=U88TWCYzeto)."
 
-In the mid-70s, British composer Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
+In the mid-70s, British [composer]({% post_url 2023-04-06-auckland-walkability %}) Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
 
 > Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
 
@@ -24,7 +24,7 @@ Eno gained a following in Japan when his records were first imported to a record
 
 Japan is rich with these sorts of environmental sounds, it is their culture, and that’s why their found sounds are so distinct. That culture is infused into their music. Especially in modern developments that have spread West–such as the group [Fuubutsushi](https://www.youtube.com/watch?v=sqiPPuCN4-8)–you can hear Japanese folk music traditions seeping through. Many contemporary Japanese musicians cite different environmental soundscapes that bring inspiration to their music; those of Japanese gardens or the bustling and bright Tokyo streets or the mighty force of the earthquakes that plague the country so often. The landscape of Japan is a defining aspect of their music, despite how unrelated it may seem.
 
-### The American occupation and economic miracle
+## The American occupation and economic miracle
 
 From 1898 to 1948, the Philippines were an American colony. Right in the middle of this period of colonization, many Filipino musicians had the opportunity to study abroad in America, where they learned jazz and brought it home. Around the same time, there was a massive increase of luxury ocean liners going across the pacific. These ocean liners would have orchestras performing on board, and many of the orchestra musicians were Filipino and Japanese. When arriving on the West Coast of the US, they would all go to music stores to buy sheet music and records.
 
@@ -42,7 +42,7 @@ Synthesizers had already existed in the Western world at ridiculous price points
 
 Since WWII, American music has been assimilating into Japanese culture and influencing countless musical explorations within the country. This was catalyzed by Japan’s economic miracle following the American occupation, which resulted in many innovative technologies and musical production hardware. From here, contemporary Japanese electronic music really began taking shape, especially with the help of perhaps the single most important pioneering figure: Haruomi Hosono.
 
-### Haruomi Hosono and Yellow Magic Orchestra
+## Haruomi Hosono and Yellow Magic Orchestra
 
 Grandson of the sole Japanese passenger and survivor of the Titanic, Haruomi Hosono was born in Tokyo in 1947 and grew up listening to FEN, the radio station serving the U.S. military during their time in Japan. All of the music he listened to was in English, and a lot of it was from California in particular. At the time, there was a psychedelic music movement happening on the West Coast, and this would be his first major influence in his style and career. In an interview by Red Bull Music Academy, Hosono says, "I was thoroughly Americanized, I even regretted that I wasn’t American."
 
@@ -68,7 +68,7 @@ Hosono also worked as a session musician, producer, arranger, and composer for s
 
 Hosono’s huge catalog spans so many different genres, many of which he helped to inspire and innovate, such as City Pop, Shibuya-kei, Japanese-language rock, and more. Yellow Magic Orchestra, Haruomi Hosono, and all of their influences leave a huge footprint on today’s electronic music, in Japan and East Asia.
 
-### Examples and conclusion
+## Examples and conclusion
 
 Each of these landmark figures, events, and movements in the history of Japanese music provide some valuable insight into the soundscapes of contemporary East Asian electronic music. [Rei Harakami](https://www.youtube.com/watch?v=WH0y2GRiHjI) is one example of an artist who was influenced by all of these things. You can hear the jazz and ambient influences as well as the field recordings used in his records, which are all produced on a Roland SC-88.
 

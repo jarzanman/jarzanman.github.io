@@ -4,30 +4,39 @@
   flex-wrap: wrap;
   column-gap: 0.3em;
   }
+  .gallery-page-image {
+    border: white solid 2px;
+    margin-bottom: 1.5rem;
+  }
   .gallery-wrapper {
     height: 140.117px;
     margin-bottom: 1.5rem;
+    &:hover > .title-tag, &:hover > a > .gallery-best-image {
+background-color: #ddd;
+border-color: #bbb;
+    }
   }
   .gallery-best-image {
     max-height: 140.117px;
     max-width: 209.333px;
     border: white solid 1px;
-  }
+    }
   .title-tag {
     background-color: white;
     color: $backgroundColor;
     font-size: 80%;
     width: fit-content;
-    max-width: 100%;
+    max-width: 90%;
     padding: 0 4px 0 4px;
     text-align: center;
     top: -1em;
     margin-left: 0.4em;
     position: relative;
-  }
-  .gallery-image {
-    border: white solid 2px;
-    margin-bottom: 1.5rem;
+    & > a {
+      background: none;
+      text-shadow: none;
+      color: $backgroundColor;
+    }
   }
   @media (max-width: 530px) {
     .gallery-wrapper {

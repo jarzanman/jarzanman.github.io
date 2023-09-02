@@ -9,7 +9,7 @@ It can be hard for us to imagine music outside of this framework: music lacking 
 
 It is an intuitive framework within their culture that has been passed down orally for centuries. The meticulous quality of the music–the microtonality and emphasis on intonation in performance coupled with the attentiveness with which it must be listened–makes it nearly impossible to accurately describe it theoretically through writing.
 
-### What is _maqam_?
+## What is _maqam_?
 
 This system that defines Arabic music is called maqam (مقام pl. _maqamat_ مقامات), meaning “place” or “position” and it is, at surface level, similar to the Western musical scale. However, maqam is an all-encompassing term for not only the pitch collection but the tonicization, melodic development, modulation possibilities, phrasing, and even historical conventions.
 
@@ -23,11 +23,11 @@ _maqamat_ are organized in families depending on their root _jins_. The principa
 
 Despite the pitches above being notated in twelve-tone fashion, in practice the intonation is quite specific and impractical to write. Interestingly, intonation in maqam differs from region to region such that a well-versed listener could distinguish where an ‘ud player is from by the subtle differences in how they play a given maqam.
 
-Intonation becomes an even denser subject when you consider that different _ajnas_ that share notes in common will still have slightly different intonations for those particular notes. _jins_ Hijaz and _jins_ Nahawand share a D, Eb, and G, yet will still require a slight shift in sounding those notes in order to play with the correct intonation.
+Intonation becomes an even [denser]({% post_url  2023-04-06-auckland-walkability %}) subject when you consider that different _ajnas_ that share notes in common will still have slightly different intonations for those particular notes. _jins_ Hijaz and _jins_ Nahawand share a D, Eb, and G, yet will still require a slight shift in sounding those notes in order to play with the correct intonation.
 
 The difference that such a small change can make in the sound and feeling of a maqam is vast, and Arabic musicians take advantage of this by using modulation.
 
-### Modulation
+## Modulation
 
 Before understanding modulation, it is important to understand that full scales are very rare in Arabic music. In fact, as opposed to Western theory, the scale is not even a fundamental component of Arabic music. Rather, a maqam melody typically spans one _jins_ for some time before moving to the next. However, you wouldn’t want to remain in one maqam with the same two _ajnas_ for the entire piece.
 
@@ -51,7 +51,7 @@ One of my own projects was to analyze the rough intervals of ‘semitonal’ _ma
 
 In practice, when Arabic music is being performed with piano or other instruments with limited accuracy in intonation, it is generally played with semitonal _maqamat_ and adjusted accordingly to match the intonation of the piano.
 
-### Summary
+## Summary
 
 _Maqamat_ are built from chained scale fragments called _ajnas_, and are sorted into families based on their root _jins_. Intonation is extremely important and can be the deciding factor of authenticity to the region. Each maqam has its own characteristic sayr(s), or typical pathway of modulations. Modulations may occur between _jins_ or between maqam, although the latter is much rarer. Sometimes, compromises in intonation are made to allow for more limited instruments to join the ensemble, and this is easier to execute with semitonal _maqamat_.
 

@@ -16,7 +16,8 @@ nav > a:link, nav > a:visited {
   text-align: center;
 }
 nav > a:hover {
-  background-color: #333;
+ border: 1px dotted #bbb;
+ color: #bbb;
 }
 @media (max-width: 530px) {
   nav > a:link, nav > a:visited {

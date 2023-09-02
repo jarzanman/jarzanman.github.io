@@ -11,7 +11,7 @@ As it turns out, Auckland is not as walkable as it is often made out to be, and 
 
 I refer to this spreadsheet which compiles data from Auckland’s 2018 census by ward. I also use Auckland’s zoning map and unitary plan. Walkability is interpreted from the main modes of transportation that people take to work; if more people walk, it’s more walkable. This is a simple quantitative metric that has an advantage over Walk Score because certain factors that aren’t considered in Walk Score like sidewalk conditions and crime rates inherently factor into the number of people walking to work. Thus, it is less so about the time it takes to walk and more so about whether people will even do it, although the former also impacts the latter.
 
-### Let’s look at the data.
+## Let’s look at the data.
 
 The data shows that median personal income (MPI) is lower in areas that have higher proportions of ethnic Polynesians. This trend is even clearer when excluding Māori peoples from that proportion. The Asian proportion of these areas generally seems to have no effect, but it is notable that Howick, the ward with the highest proportion of Asians, is one of the least walkable of Auckland along with the majority Polynesian wards Manukau and Manurewa-Papakura. All of these wards share primarily suburban infrastructure and large industrial zones in common.
 
@@ -25,7 +25,7 @@ In observing the effects of walkability on education, there is a clear correlati
 
 The reason that Waitemata and Gulf sticks out is because it contains Auckland’s central business district. In the unitary plan, this area is designated as a “City Centre” zone which allows for skyscrapers and other tall developments. It also enforces mixed-use capabilities on ground-level buildings. Skyscrapers and mixed-use developments are important for their space efficiency; they have a high taxable revenue per acre meaning Auckland makes more money off of them. Suburban areas like Howick, Manukau, and Manurewa-Papakura have miniscule and sometimes negative taxable revenues per acre due to high maintenance costs in low-density sprawl, requiring them to be subsidized by more efficient and profitable regions like Auckland’s central business district.
 
-### Why is it like this?
+## Why is it like this?
 
 Manukau and Manurewa-Papakura have the lowest MPIs, lowest walkabilities, and highest polynesian populations. On top of this, they also have the highest percentage of unqualified people. The locality of industrial zones in those areas contributes to noise pollution, air pollution, and lowered aesthetics, all of which contribute to worse mental health. Disadvantaged neighborhoods have been found to have worse aesthetics, but typically they have better street connectivity, and by extension, walkability. So why are these disadvantaged wards so poor in terms of their walkability?
 
@@ -33,7 +33,7 @@ This comes down to state housing developments. To accommodate for (and “integr
 
 While apartment buildings may have been more space-efficient, they would likely not have been as well-received. State houses certainly had issues that overlooked Māori cultural values and traditions (i.e. having a washing machine near the kitchen sink), but they are not as jarringly different to traditional Māori housing as apartment buildings may be. Māori people have generally lived in homes with their extended families. This requires a lot of space–and even the state houses were not sufficiently large enough for many–that an apartment would not provide. Thus, Auckland falls into the same car-dependency pit as most western nations do.
 
-### Why should I care?
+## Why should I care?
 
 Urban land-use configuration has a significant impact on everyone residing within or passing through a space. Your ease of access to amenities or destinations defines your routine, your opportunities, and your options. Do you have locally-owned restaurants, or fast food nearby? Do you live near a park or a library? Are you a short walk from a grocery store or must you drive each time? Is there any life outside?
 
