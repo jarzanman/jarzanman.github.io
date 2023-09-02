@@ -208,7 +208,7 @@ nav { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
 
 nav > a:link, nav > a:visited { color: #fff; background: none; border: 1px dotted white; flex: 1; padding: 0.1em 0; text-align: center; }
 
-nav > a:hover { background-color: #333; }
+nav > a:hover { border: 1px dotted #bbb; color: #bbb; }
 
 @media (max-width: 530px) { nav > a:link, nav > a:visited { min-width: 40%; } }
 a:link { color: #ddd; }
@@ -221,19 +221,32 @@ a { text-decoration: none; background: linear-gradient(#111, #111), linear-gradi
 
 h1, h2, h3, h4, h5, h6 { text-align: left; font-weight: 700; }
 
-h2 { font-size: 120%; }
+h1 { font-size: 120%; }
 
-h3 { font-size: 100%; margin-top: 5em; }
+h2 { font-size: 100%; margin-top: 8rem; }
+
+.backlinks-container { margin-bottom: 2rem; font-size: 80%; }
+
+.backlink > a:link, .backlink > a:visited { border: 1px solid white; padding: 2rem 1rem 1.5rem 1rem; display: inline-block; background: none; color: white; text-shadow: none; }
+
+.backlink { display: inline-block; margin-bottom: 1.5rem; }
+.backlink:hover > .backlink-title { background-color: #ddd; }
+.backlink:hover > a { border-color: #bbb; }
+
+.backlink-title { background-color: white; color: #111; width: fit-content; left: 0.4em; position: relative; bottom: -1em; padding: 0 4px 0 4px; text-align: center; max-width: 90%; margin-top: -1.5rem; }
+.backlink-title > a { background: none; color: #111; text-shadow: none; }
 
 .gallery { display: flex; justify-content: center; flex-wrap: wrap; column-gap: 0.3em; }
 
+.gallery-page-image { border: white solid 2px; margin-bottom: 1.5rem; }
+
 .gallery-wrapper { height: 140.117px; margin-bottom: 1.5rem; }
+.gallery-wrapper:hover > .title-tag, .gallery-wrapper:hover > a > .gallery-best-image { background-color: #ddd; border-color: #bbb; }
 
 .gallery-best-image { max-height: 140.117px; max-width: 209.333px; border: white solid 1px; }
 
-.title-tag { background-color: white; color: #111; font-size: 80%; width: fit-content; max-width: 100%; padding: 0 4px 0 4px; text-align: center; top: -1em; margin-left: 0.4em; position: relative; }
-
-.gallery-image { border: white solid 2px; margin-bottom: 1.5rem; }
+.title-tag { background-color: white; color: #111; font-size: 80%; width: fit-content; max-width: 90%; padding: 0 4px 0 4px; text-align: center; top: -1em; margin-left: 0.4em; position: relative; }
+.title-tag > a { background: none; text-shadow: none; color: #111; }
 
 @media (max-width: 530px) { .gallery-wrapper { height: 100%; margin-bottom: 0; }
   .gallery-best-image { max-width: 100%; max-height: none; } }
