@@ -15,7 +15,7 @@
             <div class="backlink">
               <div class="backlink-title"><a href="{{post.url}}" aria-label="{{post.title}}">{{ post.title }}</a></div>
               <a href="{{post.url}}" aria-label="{{post.title}}">
-                {{ post.content | markdownify | strip_html | truncatewords: 20 }}
+                {{ post.content | split: page.url | last | strip_html | replace_first: '">','…<u>' | replace_first: ' ','</u> ' | replace_first: ". ", ".~~~" | split: "~~~" | first | replace_first: '.” ','.”~~~' | split: '~~~' | first }}
             </a></div>
             {%- endif -%}
         {%- endif -%}

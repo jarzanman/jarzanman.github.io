@@ -7,7 +7,7 @@ a:visited {
 a:hover {
   color: #777;
 }
-a {
+a, u {
   text-decoration: none;
   background: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient(currentColor, currentColor);
   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;

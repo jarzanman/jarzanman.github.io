@@ -9,6 +9,7 @@ display: inline-block;
 background: none;
 color: white;
 text-shadow: none;
+width: 40rem;
 }
 .backlink {
   display: inline-block;
@@ -18,6 +19,7 @@ text-shadow: none;
   }
   &:hover > a {
     border-color: #bbb;
+    color: #ddd;
   }
 }
 .backlink-title {
