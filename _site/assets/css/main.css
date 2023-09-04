@@ -227,15 +227,16 @@ h2 { font-size: 100%; margin-top: 8rem; }
 
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
-.backlink > a:link, .backlink > a:visited { border: 1px solid white; padding: 2rem 1rem 1.5rem 1rem; display: inline-block; background: none; color: white; text-shadow: none; width: 40rem; }
+.backlink > a:link, .backlink > a:visited { border: 1px solid white; padding: 2rem 1rem 1.5rem 1rem; display: inline-block; background: none; color: white; text-shadow: none; max-width: 100%; }
 
 .backlink { display: inline-block; margin-bottom: 1.5rem; }
 .backlink:hover > .backlink-title { background-color: #ddd; }
 .backlink:hover > a { border-color: #bbb; color: #ddd; }
 
-.backlink-title { background-color: white; color: #111; width: fit-content; left: 0.4em; position: relative; bottom: -1em; padding: 0 4px 0 4px; text-align: center; max-width: 90%; margin-top: -1.5rem; }
+.backlink-title { background-color: white; color: #111; width: fit-content; left: 0.4em; position: relative; bottom: -1em; padding: 0 4px 0 4px; text-align: center; max-width: 97%; margin-top: -1.5rem; }
 .backlink-title > a { background: none; color: #111; text-shadow: none; }
 
+@media (max-width: 530px) { .backlink-title { font-size: 85%; } }
 .gallery { display: flex; justify-content: center; flex-wrap: wrap; column-gap: 0.3em; }
 
 .gallery-page-image { border: white solid 2px; margin-bottom: 1.5rem; }

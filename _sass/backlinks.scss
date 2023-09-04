@@ -9,7 +9,7 @@ display: inline-block;
 background: none;
 color: white;
 text-shadow: none;
-width: 40rem;
+max-width: 100%;
 }
 .backlink {
   display: inline-block;
@@ -31,11 +31,16 @@ position: relative;
 bottom: -1em;
 padding: 0 4px 0 4px;
 text-align: center;
-max-width: 90%;
+max-width: 97%;
 margin-top: -1.5rem;
 & > a {
   background: none;
   color: $backgroundColor;
   text-shadow: none;
 }
+}
+@media (max-width: 530px) {
+  .backlink-title {
+    font-size: 85%;
+  }
 }
