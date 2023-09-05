@@ -9,3 +9,7 @@ gem "webrick", "~> 1.8"
 group :jekyll_plugins do
   gem "jekyll-gallery-generator"
 end
+
+group :jekyll_plugins do
+  gem "jekyll-last-modified-at"
+end

@@ -11,11 +11,20 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
 plugins:
   - jekyll-gallery-generator
+  - jekyll-last-modified-at
 
 permalink: /posts/:title
+
+collections:
+  notes:
+    output: true
 
 gallery:
   dir: photos # Path to the gallery

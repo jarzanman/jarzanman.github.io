@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Walkability and ethnicity in Auckland
 ---
 

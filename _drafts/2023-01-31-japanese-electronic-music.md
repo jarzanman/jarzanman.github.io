@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Brief History of Japanese Electronica
 ---
 
