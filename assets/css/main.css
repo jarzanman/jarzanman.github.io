@@ -190,9 +190,7 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
-body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; counter-reset: sncounter; }
-
-.subheading { margin-top: 0; }
+body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
 
 p { line-height: 1.6875; margin: 1.25em 0; }
 
@@ -219,11 +217,23 @@ a:hover { color: #777; }
 
 a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gradient(#111, #111), linear-gradient(currentColor, currentColor); background-size: 0.05em 1px, 0.05em 1px, 1px 1px; background-repeat: no-repeat, no-repeat, repeat-x; text-shadow: 0.03em 0 #111, -0.03em 0 #111, 0 0.03em #111, 0 -0.03em #111, 0.06em 0 #111, -0.06em 0 #111, 0.09em 0 #111, -0.09em 0 #111, 0.12em 0 #111, -0.12em 0 #111, 0.15em 0 #111, -0.15em 0 #111; background-position: 0% 93%, 100% 93%, 0% 93%; }
 
-h1, h2, h3, h4, h5, h6 { text-align: left; font-weight: 700; }
+h1 { font-size: 120%; font-weight: 700; }
 
-h1 { font-size: 120%; }
+h2 { font-weight: 700; margin-top: 8rem; }
 
-h2 { font-size: 100%; margin-top: 8rem; }
+h1 + h4 { margin-bottom: 1.8rem; }
+
+h5 { font-size: 80%; color: #ddd; }
+
+h4 + h5 { margin-top: 1rem; }
+
+.titleblock { display: flex; justify-content: center; gap: 0.5rem; }
+
+.titleblock + p { margin-top: 1rem; }
+
+.titledesc { display: flex; flex-direction: column; justify-content: center; border-right: 1px dotted white; padding-right: 0.9rem; }
+
+.titledates { display: flex; flex-direction: column; justify-content: center; }
 
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
