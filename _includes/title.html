@@ -1,0 +1,14 @@
+<div class="titleblock">
+  <div class="titledesc">
+  <h1>{{ page.title }}</h1>
+  <h5>{{ page.description }}</h5>
+  </div>
+  <div class="titledates">
+      <h5>created</h5>
+  <h4>{{ page.creationDate | date: '%B %-d, %Y' }}</h4>
+  {% if page.modifiedDate %}    
+  <h5>last modified</h5>
+  <h4>{{ page.modifiedDate | date: '%B %-d, %Y' }}</h4>
+  {% endif %}
+  </div>
+</div>

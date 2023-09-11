@@ -1,17 +1,38 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: left;
-  font-weight: 700;
-}
 h1 {
   font-size: 120%;
+  font-weight: 700;
 }
 h2 {
-  font-size: 100%;
+  font-weight: 700;
   margin-top: 8rem;
 }
-
+h1 + h4 {
+  margin-bottom: 1.8rem;
+}
+h5 {
+  font-size: 80%;
+  color: #ddd;
+}
+h4 + h5 {
+  margin-top: 1rem;
+}
+.titleblock {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.titleblock + p {
+  margin-top: 1rem;
+}
+.titledesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px dotted white;
+  padding-right: 0.9rem;
+}
+.titledates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
