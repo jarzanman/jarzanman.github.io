@@ -19,17 +19,18 @@ h4 + h5 {
 .titleblock {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 .titleblock + p {
   margin-top: 1rem;
 }
 .titledesc {
+  text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-right: 1px dotted white;
-  padding-right: 0.9rem;
+  padding-right: 0.8rem;
 }
 .titledates {
   display: flex;

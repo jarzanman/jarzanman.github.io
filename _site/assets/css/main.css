@@ -227,11 +227,11 @@ h5 { font-size: 80%; color: #ddd; }
 
 h4 + h5 { margin-top: 1rem; }
 
-.titleblock { display: flex; justify-content: center; gap: 0.5rem; }
+.titleblock { display: flex; justify-content: center; gap: 0.8rem; }
 
 .titleblock + p { margin-top: 1rem; }
 
-.titledesc { display: flex; flex-direction: column; justify-content: center; border-right: 1px dotted white; padding-right: 0.9rem; }
+.titledesc { text-align: right; display: flex; flex-direction: column; justify-content: center; border-right: 1px dotted white; padding-right: 0.8rem; }
 
 .titledates { display: flex; flex-direction: column; justify-content: center; }
 

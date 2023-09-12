@@ -8,23 +8,15 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
       type: "notes"
     values:
-      layout: "note"
-plugins:
-  - jekyll-gallery-generator
-
-permalink: /posts/:title
-
+      layout: "post"
 collections:
   notes:
     output: true
-
+plugins:
+  - jekyll-gallery-generator
+permalink: /notes/:title
 gallery:
   dir: photos # Path to the gallery
   symlink: false # false: copy images into _site. true: create symbolic links (saves disk space)
