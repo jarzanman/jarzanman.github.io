@@ -1,5 +1,8 @@
 ---
 title: Walkability and ethnicity in Auckland
+description: Correlation?
+creationDate: 17/09/2023
+modifiedDate:
 ---
 
 I have had a long-standing and currently ongoing passion for sustainable urban design and pedestrianization, and in my casual self-study I often hear about Auckland, New Zealand. It is portrayed in a good light for its walkability and high efficiency, and it even has a perfect Walk Score.
@@ -14,7 +17,7 @@ I refer to this spreadsheet which compiles data from Auckland’s 2018 census by
 
 The data shows that median personal income (MPI) is lower in areas that have higher proportions of ethnic Polynesians. This trend is even clearer when excluding Māori peoples from that proportion. The Asian proportion of these areas generally seems to have no effect, but it is notable that Howick, the ward with the highest proportion of Asians, is one of the least walkable of Auckland along with the majority Polynesian wards Manukau and Manurewa-Papakura. All of these wards share primarily suburban infrastructure and large industrial zones in common.
 
-It is important to consider that wards like Rodney and Franklin are massive and far from the city center, making them naturally less walkable and thus less comparable in terms of statistics.
+It is important to [consider](japanese-electronica) that wards like Rodney and Franklin are massive and far from the city center, making them naturally less walkable and thus less comparable in terms of statistics.
 
 Auckland’s rail system is not particularly extensive, and of its few branches they all seem to avoid the most densely populated areas. Howick in particular, with a population of 146,000, is completely devoid of rail and has few bus stops. There is a glaring exception to the previously established correlation between low MPI and high Polynesian population, and that is the Maungakiekie-Tamaki ward. By looking at a population density map of the region, we can see that the Western Line passes by the most densely populated neighborhoods in the ward. This explains its high transit usage and perhaps the gap in MPI between it and the other majority-Polynesian wards.
 

@@ -1,8 +1,9 @@
 ---
 title: A Brief History of Japanese Electronica
+creationDate: 04/09/2023
+modifiedDate: 10/09/2023
 ---
-
-As someone who listens to a lot of music from around the world, I’ll often become obsessed with a certain region and variety for some time and then move on to the next. Japanese electronic music, and Asian electronic music in general hasn’t left my listening sphere though, and it hasn’t for years. Since discovering it, I’ve always wondered why they all have the same sort of sound; that of avant-garde innovation that feels so homely and close to nature. It’s nearly an impossible task to pinpoint an entire style of music to a few origins, but a lot can be learned from attempting it.
+I'm something of a nomad when it comes to world music, jumping from region to region and collecting souvenirs along the way. The landscape of Asian Electronica sticks out to me distinctly because it feels as if I'm in nature. I wanted to explore the reasons for this, and I did so by focusing on one sub-region: Japan.
 ## _Kankyō Ongaku_ and the history of field recordings
 
 One of the most prominent features of contemporary Japanese electronica is found sound, or field recordings. This is a common technique in which one would record audio in their area and manipulate that audio recording to achieve a desired sound during production. Japanese found sounds are very distinct, built upon over a century of ambient music innovations and many centuries of Japan’s unique sounds of the environment and the tradition; what Hiroshi Yoshimura calls “public sound art.” In order to understand the uprising of this technique in Japanese music, we must look back to 1917…
@@ -15,7 +16,7 @@ In the early 40s, French composer Pierre Schaeffer and his colleagues were given
 
 This technique found its way to Tokyo, where in 1951 an avant-garde artist collective called _Jikken Kōbō_ was formed. A member of the collective, Tōru Takemitsu was heavily influenced by _musique concrète_ and John Cage. He experimented with unconventional musical structures and tape manipulation, creating his own relatively popular _musique concrète_ pieces. Composer Toshiro Mayuzumi, however, beat the collective to it in 1953, creating the first ever Japanese instance of _musique concrète_ titled "[X, Y, Z](https://www.youtube.com/watch?v=U88TWCYzeto)."
 
-In the mid-70s, British [composer]({% post_url 2023-04-06-auckland-walkability %}) Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
+In the mid-70s, British composer Brian Eno finally coined the term “ambient music.” Inspired by Erik Satie, John Cage, Pierre Schaeffer, and the quiet harp music playing over the rain by his hospital bed, he created his first ambient work in 1975 titled "[Discreet Music](https://www.youtube.com/watch?v=jl_z5JvrKlc)." In the liner notes of the album, he says:
 
 > Ambient music must be able to accommodate many levels of listening attention without enforcing one in particular, it must be as ignorable as it is interesting.
 

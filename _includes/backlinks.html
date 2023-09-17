@@ -1,7 +1,7 @@
 {%- assign link_count = 0 -%}
-{%- for post in site.posts -%}
-        {%- if post.url != page.url -%}
-            {%- if post.content contains page.url -%}
+{%- for note in site.notes -%}
+        {%- if note.url != page.url -%}
+            {%- if note.content contains page.slug -%}
                 {%- assign link_count = link_count | plus:1 -%}
             {%- endif -%}
     {%- endif -%}
@@ -9,13 +9,13 @@
 {%- if link_count > 0 -%}
 <h1 style="margin-bottom: 1.5em; margin-top: 8rem;">Backlinks</h1>
 <div class="backlinks-container">
-        {%- for post in site.posts -%}
-        {%- if post.url != page.url -%}
-            {%- if post.content contains page.url -%}
+        {%- for note in site.notes -%}
+        {%- if note.url != page.url -%}
+            {%- if note.content contains page.slug -%}
             <div class="backlink">
-              <div class="backlink-title"><a href="{{post.url}}" aria-label="{{post.title}}">{{ post.title }}</a></div>
-              <a href="{{post.url}}" aria-label="{{post.title}}">
-                {{ post.content | split: page.url | last | strip_html | replace_first: '">','…<u>' | replace_first: ' ','</u> ' | replace_first: ". ", ".~~~" | split: "~~~" | first | replace_first: '.” ','.”~~~' | split: '~~~' | first }}
+              <div class="backlink-title"><a href="{{note.url}}" aria-label="{{note.title}}">{{ note.title }}</a></div>
+              <a href="{{note.url}}" aria-label="{{note.title}}">
+                {{ note.content | split: page.slug | last | replace_first: ". ", ".~~~" | split: "~~~" | first | replace_first: '.” ','.”~~~' | split: '~~~' | first | replace_first: '</p>', '~~~' | split: '~~~' | first | strip_html | replace_first: '">','…<u>' | replace_first: ' ','</u> ' }}
             </a></div>
             {%- endif -%}
         {%- endif -%}

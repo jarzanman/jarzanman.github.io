@@ -217,9 +217,9 @@ a:hover { color: #777; }
 
 a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gradient(#111, #111), linear-gradient(currentColor, currentColor); background-size: 0.05em 1px, 0.05em 1px, 1px 1px; background-repeat: no-repeat, no-repeat, repeat-x; text-shadow: 0.03em 0 #111, -0.03em 0 #111, 0 0.03em #111, 0 -0.03em #111, 0.06em 0 #111, -0.06em 0 #111, 0.09em 0 #111, -0.09em 0 #111, 0.12em 0 #111, -0.12em 0 #111, 0.15em 0 #111, -0.15em 0 #111; background-position: 0% 93%, 100% 93%, 0% 93%; }
 
-h1 { font-size: 120%; font-weight: 700; }
+h1 { font-size: 110%; font-weight: 700; }
 
-h2 { font-weight: 700; margin-top: 8rem; }
+h2 { font-weight: 700; margin-top: 4rem; }
 
 h1 + h4 { margin-bottom: 1.8rem; }
 
@@ -227,13 +227,13 @@ h5 { font-size: 80%; color: #ddd; }
 
 h4 + h5 { margin-top: 1rem; }
 
-.titleblock { display: flex; justify-content: center; gap: 0.8rem; }
+.titleblock { display: flex; }
 
 .titleblock + p { margin-top: 1rem; }
 
-.titledesc { text-align: right; display: flex; flex-direction: column; justify-content: center; border-right: 1px dotted white; padding-right: 0.8rem; }
+.titledesc { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; }
 
-.titledates { display: flex; flex-direction: column; justify-content: center; }
+.titledates { display: flex; flex-direction: column; justify-content: center; width: 50%; padding-left: 0.8rem; }
 
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
