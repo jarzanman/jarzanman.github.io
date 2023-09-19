@@ -1,7 +1,7 @@
 ---
 title: A Brief History of Japanese Electronica
-creationDate: 04/09/2023
-modifiedDate: 10/09/2023
+date: 2023-09-04
+modifiedDate: 2023-09-10
 ---
 I'm something of a nomad when it comes to world music, jumping from region to region and collecting souvenirs along the way. The landscape of Asian Electronica sticks out to me distinctly because it feels as if I'm in nature. I wanted to explore the reasons for this, and I did so by focusing on one sub-region: Japan.
 ## _Kankyō Ongaku_ and the history of field recordings

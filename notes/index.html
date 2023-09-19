@@ -2,10 +2,12 @@
 layout: default
 title: notes
 ---
+{% assign sorted = site.notes | sort: 'date' | reverse %}
 <ul>
-  {% for note in site.notes %}
-    <li>
+  {% for note in sorted %}
+    <li class="blogli">
       <a href="{{ note.url }}">{{ note.title }}</a>
+      <h5>{{ note.date | date: '%b %-d, %Y' }}</h5>
     </li>
   {% endfor %}
 </ul>

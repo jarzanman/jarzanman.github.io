@@ -1,8 +1,8 @@
 ---
 title: Walkability and ethnicity in Auckland
 description: Correlation?
-creationDate: 17/09/2023
-modifiedDate:
+date: 2023-02-26
+modifiedDate: 2023-09-17
 ---
 
 I have had a long-standing and currently ongoing passion for sustainable urban design and pedestrianization, and in my casual self-study I often hear about Auckland, New Zealand. It is portrayed in a good light for its walkability and high efficiency, and it even has a perfect Walk Score.

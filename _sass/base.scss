@@ -31,3 +31,19 @@ blockquote {
   font-size: 90%;
   margin-top: 0.5em;
 }
+.blogli {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  & > a {
+    background: none;
+    text-shadow: none;
+    &:visited, &:link {
+    color: #fff;
+  }
+    &:hover {
+      color:#777;
+    }
+  }
+}

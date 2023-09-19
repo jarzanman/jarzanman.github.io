@@ -200,6 +200,11 @@ blockquote { margin-left: 2rem; }
 
 .epigraph > footer { font-style: normal; text-align: right; font-size: 90%; margin-top: 0.5em; }
 
+.blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.blogli > a { background: none; text-shadow: none; }
+.blogli > a:visited, .blogli > a:link { color: #fff; }
+.blogli > a:hover { color: #777; }
+
 header { margin: 1.5rem 0 1.5rem 0; }
 
 nav { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }

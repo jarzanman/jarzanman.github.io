@@ -1,8 +1,8 @@
 ---
 title: Asteraceae
 description: The Aster Family
-creationDate: 04/09/2023
-modifiedDate: 10/09/2023
+date: 2022-02-09
+modifiedDate: 2023-03-29
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis quam eu nisi consequat, nec convallis ipsum suscipit. Duis feugiat dignissim erat. Maecenas nec sem a arcu condimentum iaculis. Phasellus id justo bibendum, feugiat arcu nec, ullamcorper diam. Pellentesque hendrerit consequat ex, sed consectetur turpis ornare a. Sed sit amet ornare est, vitae sodales erat. Integer fermentum gravida dui. Morbi ultricies sollicitudin orci, in vehicula dolor tincidunt et. Duis ut purus vitae ipsum tincidunt faucibus. Integer sed bibendum turpis.
 
