@@ -238,7 +238,7 @@ h5 { font-size: 80%; color: #ddd; }
 
 h4 + h5 { margin-top: 1rem; }
 
-.titleblock { display: flex; }
+.titleblock { display: flex; margin: 3rem 0 4rem 0; }
 
 .titleblock + p { margin-top: 1rem; }
 
