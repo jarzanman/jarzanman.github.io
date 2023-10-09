@@ -31,6 +31,20 @@ blockquote {
   font-size: 90%;
   margin-top: 0.5em;
 }
+ol {
+  counter-reset: ol;
+  & > li {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    counter-increment: ol;
+    &::before {
+      content: counter(ol);
+      font-size: 3rem;
+      font-style: italic;
+    }
+  }
+}
 .blogli {
   display: flex;
   justify-content: space-between;
@@ -46,4 +60,14 @@ blockquote {
       color:#777;
     }
   }
+}
+@media (max-width: 634px) {
+  body {
+  font-size: 1.125rem;
+}
+}
+@media (max-width: 400px) {
+  body {
+  font-size: 1rem;
+}
 }

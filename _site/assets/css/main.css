@@ -200,11 +200,17 @@ blockquote { margin-left: 2rem; }
 
 .epigraph > footer { font-style: normal; text-align: right; font-size: 90%; margin-top: 0.5em; }
 
+ol { counter-reset: ol; }
+ol > li { display: flex; align-items: center; gap: 1.25rem; counter-increment: ol; }
+ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
+
 .blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .blogli > a { background: none; text-shadow: none; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
 .blogli > a:hover { color: #777; }
 
+@media (max-width: 634px) { body { font-size: 1.125rem; } }
+@media (max-width: 400px) { body { font-size: 1rem; } }
 header { margin: 1.5rem 0 1.5rem 0; }
 
 nav { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
