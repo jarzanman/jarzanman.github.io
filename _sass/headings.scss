@@ -32,6 +32,7 @@ h4 + h5 {
   width: 50%;
   border-right: 1px dotted white;
   padding-right: 0.8rem;
+  padding-left: 2.25rem;
 }
 .titledates {
   display: flex;
@@ -39,4 +40,9 @@ h4 + h5 {
   justify-content: center;
   width: 50%;
   padding-left: 0.8rem;
+}
+@media (max-width: 684px) {
+  .titledesc {
+    padding-left: 0;
+  }
 }

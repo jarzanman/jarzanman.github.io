@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1.5rem;
   column-gap: 0.3em;
   }
   .gallery-page-image {
@@ -10,7 +11,6 @@
   }
   .gallery-wrapper {
     height: 140.117px;
-    margin-bottom: 1.5rem;
     &:hover > .title-tag, &:hover > a > .gallery-best-image {
 background-color: #ddd;
 border-color: #bbb;

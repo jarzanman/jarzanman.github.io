@@ -1,7 +1,7 @@
-header {
+header, footer {
 margin: 1.5rem 0 1.5rem 0;
 }
-nav {
+nav, footer {
   display: flex;
   flex: 1 1 100%;
   gap: 0.3em;
@@ -19,8 +19,17 @@ nav > a:hover {
  border: 1px dotted #bbb;
  color: #bbb;
 }
+footer {
+  border-top: 1px dotted white;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  & > h5 > a:link, & > h5 > a:visited {
+    background: none;
+  }
+}
 @media (max-width: 530px) {
-  nav > a:link, nav > a:visited {
+  nav > a:link, nav > a:visited, footer > a:link, footer > a:visited {
     min-width: 40%;
   }
 }
