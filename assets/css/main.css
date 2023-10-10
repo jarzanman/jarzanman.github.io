@@ -204,22 +204,26 @@ ol { counter-reset: ol; }
 ol > li { display: flex; align-items: center; gap: 1.25rem; counter-increment: ol; }
 ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
 
-.blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.blogli > h5 { text-align: right; margin-left: 3rem; }
 .blogli > a { background: none; text-shadow: none; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
 .blogli > a:hover { color: #777; }
 
 @media (max-width: 634px) { body { font-size: 1.125rem; } }
 @media (max-width: 400px) { body { font-size: 1rem; } }
-header { margin: 1.5rem 0 1.5rem 0; }
+header, footer { margin: 1.5rem 0 1.5rem 0; }
 
-nav { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
+nav, footer { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
 
 nav > a:link, nav > a:visited { color: #fff; background: none; border: 1px dotted white; flex: 1; padding: 0.1em 0; text-align: center; }
 
 nav > a:hover { border: 1px dotted #bbb; color: #bbb; }
 
-@media (max-width: 530px) { nav > a:link, nav > a:visited { min-width: 40%; } }
+footer { border-top: 1px dotted white; padding-top: 0.5rem; display: flex; justify-content: space-between; }
+footer > h5 > a:link, footer > h5 > a:visited { background: none; }
+
+@media (max-width: 530px) { nav > a:link, nav > a:visited, footer > a:link, footer > a:visited { min-width: 40%; } }
 a:link { color: #ddd; }
 
 a:visited { color: #aaa; }
@@ -242,10 +246,11 @@ h4 + h5 { margin-top: 1rem; }
 
 .titleblock + p { margin-top: 1rem; }
 
-.titledesc { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; }
+.titledesc { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; padding-left: 2.25rem; }
 
 .titledates { display: flex; flex-direction: column; justify-content: center; width: 50%; padding-left: 0.8rem; }
 
+@media (max-width: 684px) { .titledesc { padding-left: 0; } }
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
 .backlink > a:link, .backlink > a:visited { border: 1px solid white; padding: 2rem 1rem 1.5rem 1rem; display: inline-block; background: none; color: white; text-shadow: none; max-width: 100%; }
@@ -258,11 +263,11 @@ h4 + h5 { margin-top: 1rem; }
 .backlink-title > a { background: none; color: #111; text-shadow: none; }
 
 @media (max-width: 530px) { .backlink-title { font-size: 85%; } }
-.gallery { display: flex; justify-content: center; flex-wrap: wrap; column-gap: 0.3em; }
+.gallery { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; column-gap: 0.3em; }
 
 .gallery-page-image { border: white solid 2px; margin-bottom: 1.5rem; }
 
-.gallery-wrapper { height: 140.117px; margin-bottom: 1.5rem; }
+.gallery-wrapper { height: 140.117px; }
 .gallery-wrapper:hover > .title-tag, .gallery-wrapper:hover > a > .gallery-best-image { background-color: #ddd; border-color: #bbb; }
 
 .gallery-best-image { max-height: 140.117px; max-width: 209.333px; border: white solid 1px; }
