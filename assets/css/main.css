@@ -216,12 +216,12 @@ header, footer { margin: 1.5rem 0 1.5rem 0; }
 
 nav, footer { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
 
-nav > a:link, nav > a:visited { color: #fff; background: none; border: 1px dotted white; flex: 1; padding: 0.1em 0; text-align: center; }
+nav > a:link, nav > a:visited { color: #fff; background: none; border: 1px dotted white; flex: 1; padding: 0.1em 0; text-align: center; text-shadow: none; }
 
 nav > a:hover { border: 1px dotted #bbb; color: #bbb; }
 
 footer { border-top: 1px dotted white; padding-top: 0.5rem; display: flex; justify-content: space-between; }
-footer > h5 > a:link, footer > h5 > a:visited { background: none; }
+footer > h5 > a:link, footer > h5 > a:visited { background: none; color: #ddd; text-shadow: none; }
 
 @media (max-width: 530px) { nav > a:link, nav > a:visited, footer > a:link, footer > a:visited { min-width: 40%; } }
 a:link { color: #ddd; }
