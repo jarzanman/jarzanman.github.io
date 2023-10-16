@@ -194,6 +194,14 @@ body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia
 
 p { line-height: 1.6875; margin: 1.25em 0; }
 
+.question { background: #4a2242; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
+.question::before { content: "?"; font-size: 3rem; font-style: italic; }
+
+.important { background: #4a3e22; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
+.important::before { content: "!"; font-size: 3rem; font-style: italic; }
+
+.music { margin-left: -7rem; margin-top: -2rem; max-width: 47rem; position: relative; width: 47rem; }
+
 blockquote { margin-left: 2rem; }
 
 .epigraph { font-style: italic; margin: 1.25em 0 0 2rem; }
@@ -210,6 +218,7 @@ ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
 .blogli > a:hover { color: #777; }
 
+@media (max-width: 1000px) { .music { margin: 0; max-width: 100%; } }
 @media (max-width: 634px) { body { font-size: 1.125rem; } }
 @media (max-width: 400px) { body { font-size: 1rem; } }
 header, footer { margin: 1.5rem 0 1.5rem 0; }

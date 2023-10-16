@@ -18,6 +18,37 @@ p {
   line-height: 1.6875;
   margin: 1.25em 0;
 }
+.question {
+  background: #4a2242;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem 0 1.25rem;
+  gap: 1.25rem;
+  &::before {
+    content: "?";
+    font-size: 3rem;
+    font-style: italic;
+  }
+}
+.important {
+  background: #4a3e22;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem 0 1.25rem;
+  gap: 1.25rem;
+  &::before {
+    content: "!";
+    font-size: 3rem;
+    font-style: italic;
+  }
+}
+.music {
+	margin-left: -7rem;
+  margin-top: -2rem;
+	max-width: 47rem;
+	position: relative;
+	width: 47rem;
+}
 blockquote {
   margin-left: 2rem;
 }
@@ -63,6 +94,12 @@ ol {
     &:hover {
       color:#777;
     }
+  }
+}
+@media (max-width: 1000px) {
+  .music {
+  margin: 0;
+  max-width: 100%;
   }
 }
 @media (max-width: 634px) {

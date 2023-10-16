@@ -1,6 +1,6 @@
 ---
 title: Taking Photos for Plant Identification
-description: What should you take photos of?
+description: A quick primer on taking photos for future plant identification.
 date: 2023-10-08
 modifiedDate:
 ---
