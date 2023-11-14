@@ -7,12 +7,32 @@
       (ly:context-pushpop-property context grob-name 'color color)
       (loop (cdr x)))))))
 
+#(define-markup-command (on-color layout props color arg) (color? markup?)
+   (let* ((stencil (interpret-markup layout props arg))
+          (X-ext (ly:stencil-extent stencil X))
+          (Y-ext (ly:stencil-extent stencil Y)))
+
+     (ly:stencil-add 
+       (stencil-with-color
+         (ly:round-filled-box X-ext Y-ext 0)
+         color)
+       stencil)))
+
 \relative c' {
     \applyContext #(override-color-for-all-grobs (x11-color 'white))
 \omit Score.TimeSignature
 \omit Score.BarLine
 \omit Score.Stem
-  \set fingeringOrientations = #'(down)
-  \clef treble
-  <c-1> <d-2> <e-3> <f-4> <g-5> <a-6> <b-7> <c-1>
+\clef treble
+\override TextScript.staff-padding = #'()
+\override TextScript.outside-staff-priority = ##f
+  c^\markup { 
+    \with-color #white \on-color #(rgb-color 0.0666666 0.0666666 0.0666666) \pad-markup #0.2 "1"
+  }
+  d^\markup { 
+    \with-color #white \on-color #(rgb-color 0.0666666 0.0666666 0.0666666) \pad-markup #0.2 "2" 
+  }
+  e^\markup { 
+    \with-color #white \on-color #(rgb-color 0.0666666 0.0666666 0.0666666) \pad-markup #0.2 "3" 
+  }
 }

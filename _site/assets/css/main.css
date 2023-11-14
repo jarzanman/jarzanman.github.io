@@ -190,23 +190,30 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
+@font-face { font-display: swap; font-family: "Metdemo-BLMG"; src: url("./fonts/Metdemo-BLMG.ttf"); }
 body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
 
 p { line-height: 1.6875; margin: 1.25em 0; }
 
 .question { background: #4a2242; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
 .question::before { content: "?"; font-size: 3rem; font-style: italic; }
+.question > div > p { margin: 0.6125em 0; }
 
 .important { background: #4a3e22; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
 .important::before { content: "!"; font-size: 3rem; font-style: italic; }
+.important > div > p { margin: 0.6125em 0; }
 
 .music { margin-left: -7rem; margin-top: -2rem; max-width: 47rem; position: relative; width: 47rem; }
 
+.musacc { font-family: Metdemo-BLMG; }
+
 blockquote { margin-left: 2rem; }
 
-.epigraph { font-style: italic; margin: 1.25em 0 0 2rem; }
+.epigraph { font-style: italic; margin: 1.25em 0 1.25em 2rem; }
 
 .epigraph > footer { font-style: normal; text-align: right; font-size: 90%; margin-top: 0.5em; }
+
+.epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active { background: 0; color: #ddd; }
 
 ol { counter-reset: ol; }
 ol > li { display: flex; align-items: center; gap: 1.25rem; counter-increment: ol; }
@@ -221,16 +228,16 @@ ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
 @media (max-width: 1000px) { .music { margin: 0; max-width: 100%; } }
 @media (max-width: 634px) { body { font-size: 1.125rem; } }
 @media (max-width: 400px) { body { font-size: 1rem; } }
-header, footer { margin: 1.5rem 0 1.5rem 0; }
+header, .sitefooter { margin: 1.5rem 0 1.5rem 0; }
 
-nav, footer { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
+nav, .sitefooter { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
 
 nav > a:link, nav > a:visited { color: #fff; background: none; border: 1px dotted white; flex: 1; padding: 0.1em 0; text-align: center; text-shadow: none; }
 
 nav > a:hover { border: 1px dotted #bbb; color: #bbb; }
 
-footer { border-top: 1px dotted white; padding-top: 0.5rem; display: flex; justify-content: space-between; }
-footer > h5 > a:link, footer > h5 > a:visited { background: none; color: #ddd; text-shadow: none; }
+.sitefooter { border-top: 1px dotted white; padding-top: 0.5rem; display: flex; justify-content: space-between; }
+.sitefooter > h5 > a:link, .sitefooter > h5 > a:visited { background: none; color: #ddd; text-shadow: none; }
 
 @media (max-width: 530px) { nav > a:link, nav > a:visited, footer > a:link, footer > a:visited { min-width: 40%; } }
 a:link { color: #ddd; }
@@ -242,18 +249,15 @@ a:hover { color: #777; }
 a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gradient(#111, #111), linear-gradient(currentColor, currentColor); background-size: 0.05em 1px, 0.05em 1px, 1px 1px; background-repeat: no-repeat, no-repeat, repeat-x; text-shadow: 0.03em 0 #111, -0.03em 0 #111, 0 0.03em #111, 0 -0.03em #111, 0.06em 0 #111, -0.06em 0 #111, 0.09em 0 #111, -0.09em 0 #111, 0.12em 0 #111, -0.12em 0 #111, 0.15em 0 #111, -0.15em 0 #111; background-position: 0% 93%, 100% 93%, 0% 93%; }
 
 h1 { font-size: 110%; font-weight: 700; }
+h1 + .gallerydate { margin-bottom: 1.8rem; }
 
-h2 { font-weight: 700; margin-top: 4rem; }
+h2 { font-size: 107.5%; font-weight: 700; margin-top: 4.5rem; }
 
-h1 + h4 { margin-bottom: 1.8rem; }
+h3 { font-weight: 700; }
 
-h5 { font-size: 80%; color: #ddd; }
+.postedmodified { font-size: 80%; color: #ddd; }
 
-h4 + h5 { margin-top: 1rem; }
-
-.titleblock { display: flex; margin: 3rem 0 4rem 0; }
-
-.titleblock + p { margin-top: 1rem; }
+.titleblock { display: flex; margin: 3rem 0 3rem 0; }
 
 .titledesc { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; padding-left: 2.25rem; }
 
