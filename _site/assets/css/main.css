@@ -186,14 +186,19 @@ Make elements with the HTML hidden attribute stay hidden by default.
 */
 [hidden] { display: none; }
 
-@font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; font-variant: small-caps; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
 @font-face { font-display: swap; font-family: "Metdemo-BLMG"; src: url("./fonts/Metdemo-BLMG.ttf"); }
+@font-face { font-display: swap; font-family: "GoudyIni"; font-style: normal; src: url("./fonts/GoudyIni.woff") format("woff"); }
 body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
 
-p { line-height: 1.6875; margin: 1.25em 0; }
+p { line-height: 1.6875; margin: 1.25em 0; position: relative; }
+
+.titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 5.5em; line-height: 0.65; padding: 0.05em 0.065em 0 0; }
+
+.titleblock + p:first-line { font-variant: small-caps; }
 
 .question { background: #4a2242; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
 .question::before { content: "?"; font-size: 3rem; font-style: italic; }
@@ -219,7 +224,7 @@ ol { counter-reset: ol; }
 ol > li { display: flex; align-items: center; gap: 1.25rem; counter-increment: ol; }
 ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
 
-.blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .blogli > h5 { text-align: right; margin-left: 3rem; }
 .blogli > a { background: none; text-shadow: none; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
@@ -251,7 +256,7 @@ a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gr
 h1 { font-size: 110%; font-weight: 700; }
 h1 + .gallerydate { margin-bottom: 1.8rem; }
 
-h2 { font-size: 107.5%; font-weight: 700; margin-top: 4.5rem; }
+h2 { font-variant: small-caps; font-size: 110%; margin-top: 4.5rem; }
 
 h3 { font-weight: 700; }
 
