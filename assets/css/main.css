@@ -196,7 +196,7 @@ body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia
 
 p { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 
-.titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 5.5em; line-height: 1.4; padding: 0.05em 0.065em 0 0; }
+.titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 5.5em; line-height: 0.8; padding: 0.05em 0.065em 0 0; }
 
 .titleblock + p:first-line { font-variant: small-caps; }
 
