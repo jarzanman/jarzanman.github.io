@@ -22,6 +22,7 @@ p {
 .titleblock + p:first-line {
   font-family: "Linden Hill";
   font-feature-settings: "smcp";
+  -webkit-font-feature-settings: "smcp";
   font-size: 1.5rem;
   line-height: 1;
 }
