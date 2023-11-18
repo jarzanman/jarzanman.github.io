@@ -197,7 +197,7 @@ body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia
 
 p { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 
-.titleblock + p:first-line { font-family: "Linden Hill"; font-feature-settings: "smcp"; font-size: 1.5rem; line-height: 1; }
+.titleblock + p:first-line { font-family: "Linden Hill"; font-feature-settings: "smcp"; -webkit-font-feature-settings: "smcp"; font-size: 1.5rem; line-height: 1; }
 
 .titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 5.5em; line-height: 0.8; padding: 0.05em 0.065em 0 0; }
 
@@ -257,7 +257,7 @@ a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gr
 h1 { font-size: 110%; font-weight: 700; }
 h1 + .gallerydate { margin-bottom: 1.8rem; }
 
-h2 { font-family: "Linden Hill"; font-feature-settings: "smcp"; font-size: 1.65rem; line-height: 1; margin-top: 4.5rem; }
+h2 { font-family: "Linden Hill"; font-feature-settings: "smcp"; -webkit-font-feature-settings: "smcp"; font-size: 1.65rem; line-height: 1; margin-top: 4.5rem; }
 
 h3 { font-weight: 700; }
 
