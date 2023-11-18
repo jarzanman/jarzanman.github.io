@@ -6,8 +6,10 @@ h1 {
   }
 }
 h2 {
-  font-variant: small-caps;
-  font-size: 110%;
+  font-family: "Linden Hill";
+  font-feature-settings: "smcp";
+  font-size: 1.65rem;
+  line-height: 1;
   margin-top: 4.5rem;
 }
 h3 {

@@ -19,15 +19,18 @@ p {
   margin: 1.25em 0;
   position: relative;
 }
+.titleblock + p:first-line {
+  font-family: "Linden Hill";
+  font-feature-settings: "smcp";
+  font-size: 1.5rem;
+  line-height: 1;
+}
 .titleblock + p::first-letter {
   font-family: "GoudyIni";
   float: left;
   font-size: 5.5em;
   line-height: 0.8;
   padding: 0.05em 0.065em 0 0;
-}
-.titleblock + p:first-line {
-  font-variant: small-caps;
 }
 .question {
   background: #4a2242;
@@ -67,7 +70,7 @@ p {
 	width: 47rem;
 }
 .musacc {
-  font-family: Metdemo-BLMG;
+  font-family: "Metdemo-BLMG";
 }
 blockquote {
   margin-left: 2rem;
