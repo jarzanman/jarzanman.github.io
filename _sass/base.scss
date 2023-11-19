@@ -10,7 +10,6 @@ body {
   max-width: 40rem;
   margin: auto;
   word-wrap: break-word;
-  text-rendering: optimizeLegibility;
   font-kerning: normal;
   hyphens: auto;
 }
@@ -19,19 +18,17 @@ p {
   margin: 1.25em 0;
   position: relative;
 }
-.titleblock + p:first-line {
-  font-family: "Linden Hill";
-  font-feature-settings: "smcp";
-  -webkit-font-feature-settings: "smcp";
-  font-size: 1.5rem;
-  line-height: 1;
-}
-.titleblock + p::first-letter {
+.titleblock + p:first-letter {
   font-family: "GoudyIni";
   float: left;
-  font-size: 5.5em;
+  font-size: 7.1rem;
   line-height: 0.8;
-  padding: 0.05em 0.065em 0 0;
+  padding: 0 0.065em 0 0;
+}
+.titleblock + p:first-line {
+  font-family: "NotoSerif-SC";
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 .question {
   background: #4a2242;
