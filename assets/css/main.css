@@ -10,11 +10,10 @@
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
 */
-html { line-height: 1.5; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -moz-tab-size: 4; /* 3 */ tab-size: 4; /* 3 */ font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */ font-feature-settings: normal; /* 5 */ font-variation-settings: normal; /* 6 */ }
+html { line-height: 1.5; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -moz-tab-size: 4; /* 3 */ tab-size: 4; /* 3 */ font-feature-settings: normal; /* 5 */ font-variation-settings: normal; /* 6 */ }
 
 /*
 1. Remove the margin in all browsers.
@@ -192,14 +191,14 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; line-gap-override: 0; }
 @font-face { font-display: swap; font-family: "Metdemo-BLMG"; src: url("./fonts/Metdemo-BLMG.ttf"); }
 @font-face { font-display: swap; font-family: "GoudyIni"; font-style: normal; src: url("./fonts/GoudyIni.woff") format("woff"); }
-@font-face { font-display: swap; font-family: "Linden Hill"; font-style: normal; src: url("./fonts/LindenHill-webfont.ttf") format("ttf"); }
-body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; text-rendering: optimizeLegibility; font-kerning: normal; hyphens: auto; }
+@font-face { font-display: swap; font-family: "NotoSerif-SC"; src: url("./fonts/NotoSerif-SC.woff2") format("woff2"); }
+body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
 
 p { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 
-.titleblock + p:first-line { font-family: "Linden Hill"; font-feature-settings: "smcp"; -webkit-font-feature-settings: "smcp"; font-size: 1.5rem; line-height: 1; }
+.titleblock + p:first-letter { font-family: "GoudyIni"; float: left; font-size: 7.1rem; line-height: 0.8; padding: 0 0.065em 0 0; }
 
-.titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 5.5em; line-height: 0.8; padding: 0.05em 0.065em 0 0; }
+.titleblock + p:first-line { font-family: "NotoSerif-SC"; font-size: 1.5rem; line-height: 1.4; }
 
 .question { background: #4a2242; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
 .question::before { content: "?"; font-size: 3rem; font-style: italic; }
@@ -257,7 +256,7 @@ a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gr
 h1 { font-size: 110%; font-weight: 700; }
 h1 + .gallerydate { margin-bottom: 1.8rem; }
 
-h2 { font-family: "Linden Hill"; font-feature-settings: "smcp"; -webkit-font-feature-settings: "smcp"; font-size: 1.65rem; line-height: 1; margin-top: 4.5rem; }
+h2 { font-family: "NotoSerif-SC"; font-size: 1.65rem; line-height: 1; margin-top: 4.5rem; }
 
 h3 { font-weight: 700; }
 
