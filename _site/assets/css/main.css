@@ -194,11 +194,11 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "NotoSerif-SC"; src: url("./fonts/NotoSerif-SC.woff2") format("woff2"); }
 body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
 
-p { line-height: 1.6875; margin: 1.25em 0; position: relative; }
+p, ol li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 
-.titleblock + p:first-letter { font-family: "GoudyIni"; float: left; font-size: 7.1rem; line-height: 0.8; padding: 0 0.065em 0 0; }
+.titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 7.1rem; line-height: 0.8; padding: 0 0.065em 0 0; }
 
-.titleblock + p:first-line { font-family: "NotoSerif-SC"; font-size: 1.5rem; line-height: 1.4; }
+.titleblock + p::first-line { font-family: "NotoSerif-SC"; font-size: 1.5rem; line-height: 1.4; }
 
 .question { background: #4a2242; display: flex; align-items: center; padding: 0 1.25rem 0 1.25rem; gap: 1.25rem; }
 .question::before { content: "?"; font-size: 3rem; font-style: italic; }
@@ -220,12 +220,12 @@ blockquote { margin-left: 2rem; }
 
 .epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active { background: 0; color: #ddd; }
 
-ol { counter-reset: ol; }
-ol > li { display: flex; align-items: center; gap: 1.25rem; counter-increment: ol; }
-ol > li::before { content: counter(ol); font-size: 3rem; font-style: italic; }
+ol { counter-reset: ol; margin-left: 1.5em; }
+ol > li { counter-increment: ol; position: relative; }
+ol > li::before { position: absolute; content: counter(ol) ")"; margin-left: -1.5em; }
 
 .blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-.blogli > h5 { text-align: right; margin-left: 3rem; }
+.blogli > .postedmodified { text-align: right; margin-left: 3rem; }
 .blogli > a { background: none; text-shadow: none; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
 .blogli > a:hover { color: #777; }

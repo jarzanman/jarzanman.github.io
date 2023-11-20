@@ -7,7 +7,7 @@ title: notes
   {% for note in sorted %}
     <li class="blogli">
       <a href="{{ note.url }}">{{ note.title }}</a>
-      <h5>{{ note.date | date: '%b %-d, %Y' }}</h5>
+      <div class="postedmodified">{{ note.date | date: '%b %-d, %Y' }}</div>
     </li>
   {% endfor %}
 </ul>

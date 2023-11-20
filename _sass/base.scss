@@ -13,19 +13,19 @@ body {
   font-kerning: normal;
   hyphens: auto;
 }
-p {
+p, ol li {
   line-height: 1.6875;
   margin: 1.25em 0;
   position: relative;
 }
-.titleblock + p:first-letter {
+.titleblock + p::first-letter {
   font-family: "GoudyIni";
   float: left;
   font-size: 7.1rem;
   line-height: 0.8;
   padding: 0 0.065em 0 0;
 }
-.titleblock + p:first-line {
+.titleblock + p::first-line {
   font-family: "NotoSerif-SC";
   font-size: 1.5rem;
   line-height: 1.4;
@@ -89,15 +89,14 @@ blockquote {
 }
 ol {
   counter-reset: ol;
+  margin-left: 1.5em;
   & > li {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
     counter-increment: ol;
+    position: relative;
     &::before {
-      content: counter(ol);
-      font-size: 3rem;
-      font-style: italic;
+      position: absolute;
+      content:counter(ol)')';
+      margin-left: -1.5em;
     }
   }
 }
@@ -106,7 +105,7 @@ ol {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  & > h5 {
+  & > .postedmodified {
     text-align: right;
     margin-left: 3rem;
   }
