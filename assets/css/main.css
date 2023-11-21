@@ -273,7 +273,7 @@ h3 { font-weight: 700; }
 
 @media (max-width: 537px) { .titleblock { display: inline; }
   .title { width: 100%; display: inline-block; border: 0; padding: 0; text-align: center; margin-bottom: 0.25rem; }
-  .postdates { font-size: 90%; display: grid; justify-content: center; grid-column-gap: 1em; grid-template-columns: auto auto; width: 100%; padding: 0; align-items: center; border-bottom: 1px white dotted; padding-bottom: 0.8rem; }
+  .postdates { font-size: 90%; display: grid; justify-content: center; grid-column-gap: 1em; grid-template-columns: auto auto; width: 100%; padding: 0; align-items: center; }
   .postdates > .subtitle { text-align: right; } }
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
