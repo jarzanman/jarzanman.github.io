@@ -194,7 +194,9 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: "NotoSerif-SC"; src: url("./fonts/NotoSerif-SC.woff2") format("woff2"); }
 body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
 
-p, ol li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
+p, ol > li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
+
+.subtitle { font-size: 80%; color: #ddd; }
 
 .titleblock + p::first-letter { font-family: "GoudyIni"; float: left; font-size: 7.1rem; line-height: 0.8; padding: 0 0.065em 0 0; }
 
@@ -208,9 +210,7 @@ p, ol li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 .important::before { content: "!"; font-size: 3rem; font-style: italic; }
 .important > div > p { margin: 0.6125em 0; }
 
-.music { margin-left: -7rem; margin-top: -2rem; max-width: 47rem; position: relative; width: 47rem; }
-
-.musacc { font-family: "Metdemo-BLMG"; }
+.mustext { font-family: "Metdemo-BLMG"; }
 
 blockquote { margin-left: 2rem; }
 
@@ -218,21 +218,26 @@ blockquote { margin-left: 2rem; }
 
 .epigraph > footer { font-style: normal; text-align: right; font-size: 90%; margin-top: 0.5em; }
 
-.epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active { background: 0; color: #ddd; }
+.epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active { color: #ddd; }
+
+.epigraphcitation:hover { color: #777; }
 
 ol { counter-reset: ol; margin-left: 1.5em; }
 ol > li { counter-increment: ol; position: relative; }
 ol > li::before { position: absolute; content: counter(ol) ")"; margin-left: -1.5em; }
 
 .blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-.blogli > .postedmodified { text-align: right; margin-left: 3rem; }
+.blogli > .subtitle { text-align: right; margin-left: 3rem; }
 .blogli > a { background: none; text-shadow: none; }
 .blogli > a:visited, .blogli > a:link { color: #fff; }
 .blogli > a:hover { color: #777; }
 
-@media (max-width: 1000px) { .music { margin: 0; max-width: 100%; } }
-@media (max-width: 634px) { body { font-size: 1.125rem; } }
-@media (max-width: 400px) { body { font-size: 1rem; } }
+@media (max-width: 634px) { body { font-size: 1.125rem; }
+  .titleblock + p::first-line { font-size: 1.375rem; }
+  .titleblock + p::first-letter { font-size: 6.5rem; } }
+@media (max-width: 400px) { body { font-size: 1rem; }
+  .titleblock + p::first-line { font-size: 1.25rem; }
+  .titleblock + p::first-letter { font-size: 5.8rem; } }
 header, .sitefooter { margin: 1.5rem 0 1.5rem 0; }
 
 nav, .sitefooter { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }
@@ -260,15 +265,16 @@ h2 { font-family: "NotoSerif-SC"; font-size: 1.65rem; line-height: 1; margin-top
 
 h3 { font-weight: 700; }
 
-.postedmodified { font-size: 80%; color: #ddd; }
-
 .titleblock { display: flex; margin: 3rem 0 3rem 0; }
 
-.titledesc { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; padding-left: 2.25rem; }
+.title { text-align: right; display: flex; align-items: right; flex-direction: column; justify-content: center; width: 50%; border-right: 1px dotted white; padding-right: 0.8rem; padding-left: 2.25rem; }
 
-.titledates { display: flex; flex-direction: column; justify-content: center; width: 50%; padding-left: 0.8rem; }
+.postdates { display: flex; flex-direction: column; justify-content: center; width: 50%; padding-left: 0.8rem; }
 
-@media (max-width: 684px) { .titledesc { padding-left: 0; } }
+@media (max-width: 537px) { .titleblock { display: inline; }
+  .title { width: 100%; display: inline-block; border: 0; padding: 0; text-align: center; margin-bottom: 0.25rem; }
+  .postdates { font-size: 90%; display: grid; justify-content: center; grid-column-gap: 1em; grid-template-columns: auto auto; width: 100%; padding: 0; align-items: center; border-bottom: 1px white dotted; padding-bottom: 0.8rem; }
+  .postdates > .subtitle { text-align: right; } }
 .backlinks-container { margin-bottom: 2rem; font-size: 80%; }
 
 .backlink > a:link, .backlink > a:visited { border: 1px solid white; padding: 2rem 1rem 1.5rem 1rem; display: inline-block; background: none; color: white; text-shadow: none; max-width: 100%; }

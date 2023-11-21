@@ -1,13 +1,13 @@
 <div class="titleblock">
-  <div class="titledesc">
+  <div class="title">
   <h1>{{ page.title }}</h1>
   </div>
-  <div class="titledates">
-      <div class="postedmodified">posted</div>
-  <div class="postdate">{{ page.date | date_to_long_string: "ordinal", "US" }}</div>
-  {% if page.modifiedDate %}    
-  <div class="postedmodified">last modified</div>
-  <div class="postdate">{{ page.modifiedDate | date_to_long_string: "ordinal", "US" }}</div>
+  <div class="postdates">
+      <div class="subtitle">posted</div>
+ {{ page.date | date_to_long_string: "ordinal", "US" }}
+  {% if page.modifiedDate %}
+  <div class="subtitle">last modified</div>
+  {{ page.modifiedDate | date_to_long_string: "ordinal", "US" }}
   {% endif %}
   </div>
 </div>

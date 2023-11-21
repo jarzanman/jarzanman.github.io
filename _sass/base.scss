@@ -13,10 +13,14 @@ body {
   font-kerning: normal;
   hyphens: auto;
 }
-p, ol li {
+p, ol > li {
   line-height: 1.6875;
   margin: 1.25em 0;
   position: relative;
+}
+.subtitle {
+  font-size: 80%;
+  color: #ddd;
 }
 .titleblock + p::first-letter {
   font-family: "GoudyIni";
@@ -60,14 +64,7 @@ p, ol li {
     margin: 0.6125em 0;
   }
 }
-.music {
-	margin-left: -7rem;
-  margin-top: -2rem;
-	max-width: 47rem;
-	position: relative;
-	width: 47rem;
-}
-.musacc {
+.mustext {
   font-family: "Metdemo-BLMG";
 }
 blockquote {
@@ -84,8 +81,10 @@ blockquote {
   margin-top: 0.5em;
 }
 .epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active {
-  background: 0;
   color: #ddd;
+}
+.epigraphcitation:hover {
+  color: #777;
 }
 ol {
   counter-reset: ol;
@@ -105,7 +104,7 @@ ol {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  & > .postedmodified {
+  & > .subtitle {
     text-align: right;
     margin-left: 3rem;
   }
@@ -120,19 +119,25 @@ ol {
     }
   }
 }
-@media (max-width: 1000px) {
-  .music {
-  margin: 0;
-  max-width: 100%;
-  }
-}
-@media (max-width: 634px) {
+ @media (max-width: 634px) {
   body {
-  font-size: 1.125rem;
-}
+    font-size: 1.125rem;
+  }
+  .titleblock + p::first-line {
+    font-size: 1.375rem;
+  }
+  .titleblock + p::first-letter {
+    font-size: 6.5rem;
+  }
 }
 @media (max-width: 400px) {
   body {
-  font-size: 1rem;
-}
+    font-size: 1rem;
+  }
+  .titleblock + p::first-line {
+    font-size: 1.25rem;
+  }
+  .titleblock + p::first-letter {
+    font-size: 5.8rem;
+  }
 }
