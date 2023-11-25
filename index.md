@@ -17,7 +17,7 @@ Long ago, my brother [Toni](https://www.tonijarjour.com/){:target="_blank"} show
 #### Line Length
 The most important thing, to me, is keeping line length short. This keeps the page attractive and comfortable to read because your eyes don't have to move as much to reach the end of each line or the start of the next. A bit like physical books.
 
-A problem that comes with short line length is the ragged right edge. I wanted to go all the way in emulating the typesetting of a book, but justified text on the web is just not as nuanced as justified text in print. I opted for left-aligned text with hyphenation to tame the right edge as much as possible..
+A problem that comes with short line length is the ragged right edge. I wanted to go all the way in emulating the typesetting of a book, but justified text on the web is just not as nuanced as justified text in print. I opted for left-aligned text with hyphenation to tame the right edge as much as possible.
 #### Fonts
 As for fonts, the body text uses [Libre Baskerville](https://www.impallari.com/revivals/baskerville/){:target="_blank"} by Impallari Type, and the smallcaps use [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif){:target="_blank"} by Google.
 
