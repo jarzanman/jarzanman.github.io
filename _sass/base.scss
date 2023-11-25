@@ -128,9 +128,6 @@ ol {
   .titleblock + p::first-line {
     font-size: 1.375rem;
   }
-  .titleblock + p::first-letter {
-    font-size: 6.5rem;
-  }
 }
 @media (max-width: 400px) {
   body {
@@ -138,8 +135,5 @@ ol {
   }
   .titleblock + p::first-line {
     font-size: 1.25rem;
-  }
-  .titleblock + p::first-letter {
-    font-size: 5.8rem;
-  }
+}
 }

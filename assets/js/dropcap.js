@@ -1,6 +1,6 @@
 const fonts = ["GoudyIni", "TypographerWoodcut", "CheshireInitials", "Exotica"];
 let random = fonts[Math.floor(Math.random() * fonts.length)];
-//random = fonts[3]
+//random = fonts[2]
 let dc = document.querySelectorAll(".dc");
 console.log(dc);
 switch (random) {
