@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang='en-US'>
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
     
-    <meta name="description" content="julian jarjour's writing and photography."/>
+    <meta name="description" content="julian jarjour's writing and photography.">
      
-    <title>julian jarjour</title>
+    <title>test - julian jarjour</title>
     
     <link rel="stylesheet" href='/assets/css/main.css' />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
@@ -21,15 +21,48 @@
 </header>
  <div class="epigraph">
 I should not like to think that some demigod had come before me and picked out some of the best of the stars. I wish to know an entire heaven and an entire earth.
-<footer><a class="epigraphcitation" target=_blank href="https://thoreau.library.ucsb.edu/writings_journals_pdfs/TMS20newTR.pdf">Henry David Thoreau, <em>Journal</em></a></footer>
+<footer><a class="epigraphcitation" target="_blank" href="https://thoreau.library.ucsb.edu/writings_journals_pdfs/TMS20newTR.pdf">Henry David Thoreau, <em>Journal</em></a></footer>
 </div>
-<p>Here's my site. It's still in an early phase of construction, but its been fun learning HTML and CSS to make this thing.</p>
-<p>This'll contain my photography, writing, hopefully music at some point, and other miscellaneous things. I'll be writing about lots of topics, from botany to chess to competition maths to music theory to aesthetics to book reviews and so on. I've just got to actually start writing all of that stuff. One day.</p>
-<p>Basically, this is all just filler text for now.</p>
+<p>This’ll contain my photography, writing, hopefully music at some point, and other miscellaneous things. I’ll be writing about lots of topics, from botany to chess to competition maths to music theory to aesthetics to book reviews and so on. I’ve just got to actually start writing all of that stuff. One day.</p>
+
+<h2 id="colophon">Colophon</h2>
+<p>I began building this site on a whim in August 2023. Rarely do I follow through on my whims, and I’m no coder, but I sat down and did it. To my surprise, this has been changing my life. It’s just a little website, but it’s sent me on ad-hoc writing assignments, motivating me to wonder and read and write so much more than I did prior to the site.</p>
+<h3 id="framework">Framework</h3>
+<p>This site is generated with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>. Everything on my part was written in good ‘ol HTML and CSS, as well as some handy <a href="https://shopify.github.io/liquid/" target="_blank">Liquid</a> syntax. As for my setup, I’m running <a href="https://archlinux.org/" target="_blank">Arch Linux</a> and writing in <a href="https://neovim.io/" target="_blank">Neovim</a>.</p>
+<h3 id="typography">Typography</h3>
+<p>Long ago, my brother <a href="https://www.tonijarjour.com/" target="_blank">Toni</a> showed me <a href="https://practicaltypography.com/" target="blank">Butterick’s Practical Typography</a>: a fantastic resource for best practices in typography. I haven’t been the same since, and naturally I’ve spent a ridiculous amount of time tweaking the type on this site. Despite the time sink, everything is pretty simple.</p>
+<h4 id="line-length">Line Length</h4>
+<p>The most important thing, to me, is keeping line length short. This keeps the page attractive and comfortable to read because your eyes don’t have to move as much to reach the end of each line or the start of the next. A bit like physical books.</p>
+
+<p>A problem that comes with short line length is the ragged right edge. I wanted to go all the way in emulating the typesetting of a book, but justified text on the web is just not as nuanced as justified text in print. I opted for left-aligned text with hyphenation to tame the right edge as much as possible..</p>
+<h4 id="fonts">Fonts</h4>
+<p>As for fonts, the body text uses <a href="https://www.impallari.com/revivals/baskerville/" target="_blank">Libre Baskerville</a> by Impallari Type. The dropcaps on my articles use <a href="https://www.1001fonts.com/goudy-initialen-font.html" target="_blank">Goudy Initialen</a> by Dieter Steffmann, who kindly provides all of his fonts for free, and the smallcaps use <a href="https://fonts.google.com/noto/specimen/Noto+Serif" target="_blank">Noto Serif</a> by Google.</p>
+
+<p>I was met with browser incompatibility issues when trying to select the smallcaps font variant for Noto Serif using CSS, so I ended up using <a href="https://fontforge.org/en-US/" target="_blank">FontForge</a> to map the smallcaps characters onto the lowercase letters. I thank <a href="https://v4.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html" target="_blank">Chris Krycho</a> for that idea.</p>
+
+<p>In the future, I plan to expand my selection of dropcap fonts to fit different types of articles, an idea I’m taking from the wonderful <a href="https://gwern.net/dropcap#drop-cap-implementation" target="_blank">Gwern</a>.</p>
+<h4 id="underlines">Underlines</h4>
+<p>The most engineered aspect of this site’s typography is underlining. Regular underlines don’t clear <a href="https://en.wikipedia.org/wiki/Descender" target="_blank">descenders</a> very well, so there’s a wild CSS solution to remedy that:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a, u {
+  text-decoration: none;
+  background: linear-gradient($backgroundColor, $backgroundColor), linear-gradient($backgroundColor, $backgroundColor), linear-gradient(currentColor, currentColor);
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-shadow: 0.03em 0 $backgroundColor, -0.03em 0 $backgroundColor, 0 0.03em $backgroundColor, 0 -0.03em $backgroundColor, 0.06em 0 $backgroundColor, -0.06em 0 $backgroundColor, 0.09em 0 $backgroundColor, -0.09em 0 $backgroundColor, 0.12em 0 $backgroundColor, -0.12em 0 $backgroundColor, 0.15em 0 $backgroundColor, -0.15em 0 $backgroundColor;
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+  }
+}
+</code></pre></div></div>
+<p>Not sure where I found this solution, but it works wonders. Note that Jekyll uses <a href="https://sass-lang.com/" target="_blank">Sass</a>, a CSS extension language that allows setting variables like <code class="language-plaintext highlighter-rouge">$backgroundColor</code> as seen above.</p>
  <footer class="sitefooter">
-  <h5>&copy; julian jarjour 2023</h5>
-  <h5><a href="https://www.instagram.com/julian.jarjour/" target="_blank">instagram</a></h5>
+  <div class="subtitle">&copy;&nbsp;julian jarjour&nbsp;2023</div>
+  <div class="subtitle"><a href="https://www.instagram.com/julian.jarjour/" target="_blank">instagram</a></div>
 </footer>
 
+    <script src="../assets/anchor.js"></script>
+<script>
+  anchors.options.icon = '¶';
+   anchors.add();
+</script>
   </body>
 </html>

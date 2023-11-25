@@ -34,6 +34,16 @@ p, ol > li {
   font-size: 1.5rem;
   line-height: 1.4;
 }
+pre {
+    overflow: auto;
+    padding: 0.5em;
+    line-height: 130%;
+  }
+code, pre {
+  background: #333;
+  font-family: monospace;
+  font-size: 95%;
+}
 .question {
   background: #4a2242;
   display: flex;
@@ -78,7 +88,6 @@ blockquote {
   font-style: normal;
   text-align: right;
   font-size: 90%;
-  margin-top: 0.5em;
 }
 .epigraphcitation:link, .epigraphcitation:visited, .epigraphcitation:active {
   color: #ddd;

@@ -1,5 +1,5 @@
-h1 {
-  font-size: 110%;
+ h1 {
+  font-size: 120%;
   font-weight: 700;
   & + .gallerydate {
     margin-bottom: 1.8rem;
@@ -7,21 +7,36 @@ h1 {
 }
 h2 {
   font-family: "NotoSerif-SC";
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   line-height: 1;
   margin-top: 4.5rem;
+  border-bottom: 1px dotted white;
+}
+h2 .anchorjs-link {
+  color: #bbb;
+  background: 0;
+  float: right;
+}
+h3 .anchorjs-link, h4 .anchorjs-link {
+  color: #bbb;
+  background: 0;
 }
 h3 {
+  font-family: "NotoSerif-SC";
+  font-size: 125%;
+  margin-bottom: -0.75em;
+}
+h4 {
   font-weight: 700;
+  margin-bottom: -1em;
 }
 .titleblock {
   display: flex;
   margin: 3rem 0 3rem 0;
 }
-.title {
+.posttitle {
   text-align: right;
   display: flex;
-  align-items: right;
   flex-direction: column;
   justify-content: center;
   width: 50%;
@@ -40,7 +55,7 @@ h3 {
 .titleblock {
   display: inline;
 }
-.title {
+.posttitle {
   width: 100%;
   display: inline-block;
   border: 0;
