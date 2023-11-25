@@ -22,13 +22,6 @@ p, ol > li {
   font-size: 80%;
   color: #ddd;
 }
-.titleblock + p::first-letter {
-  font-family: "GoudyIni";
-  float: left;
-  font-size: 7.1rem;
-  line-height: 0.8;
-  padding: 0 0.065em 0 0;
-}
 .titleblock + p::first-line {
   font-family: "NotoSerif-SC";
   font-size: 1.5rem;
@@ -123,7 +116,7 @@ ol {
     &:visited, &:link {
     color: #fff;
   }
-    &:hover {
+    &::hover {
       color:#777;
     }
   }

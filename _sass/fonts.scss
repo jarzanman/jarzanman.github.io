@@ -3,7 +3,6 @@
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 400;
-  font-variant: small-caps;
   src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2")
     format("woff2");
 }
@@ -37,14 +36,36 @@
 }
 @font-face {
   font-display: swap;
+  font-family: "NotoSerif-SC";
+  src: url("./fonts/NotoSerif-SC.woff2")
+    format("woff2");
+}
+// dropcaps
+@font-face {
+  font-display: swap;
   font-family: "GoudyIni";
   font-style: normal;
   src: url("./fonts/GoudyIni.woff")
-    format("woff");
+    format("woff2");
 }
 @font-face {
   font-display: swap;
-  font-family: "NotoSerif-SC";
-  src: url("./fonts/NotoSerif-SC.woff2")
+  font-family: "TypographerWoodcut";
+  font-style: normal;
+  src: url("./fonts/TypographerWoodcut.ttf")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "CheshireInitials";
+  font-style: normal;
+  src: url("./fonts/CheshireInitials.ttf")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Exotica";
+  font-style: normal;
+  src: url("./fonts/exotica.woff2")
     format("woff2");
 }

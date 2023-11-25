@@ -4,7 +4,7 @@ description: A quick primer on taking photos for future plant identification.
 date: 2023-10-08
 modifiedDate: 2023-11-17
 ---
-Lately I've been diving into botany for fun, making my first confident plant identifications just yesterday: *Helianthus tuberosus* and *Silene latifolia*. It's exciting to finally have certainty in what I was observing. The thought that I might be able to recognize these flowers in the future, as if they're new friends, is even more exciting.
+<span class="dc">L</span>ately I've been diving into botany for fun, making my first confident plant identifications just yesterday: *Helianthus tuberosus* and *Silene latifolia*. It's exciting to finally have certainty in what I was observing. The thought that I might be able to recognize these flowers in the future, as if they're new friends, is even more exciting.
 
 I don't carry a Flora around, so I have to take lots of photos of the plants I want to identify. I had no idea what to include in those photos for some time, so I'd end up back at home looking through *Flora Novae Angliae* with no recollection of whether the plant's leaves were opposite or alternating. The key to taking the right photos is knowing what to look for, i.e., the stuff that will be on your dichotomous key.
 

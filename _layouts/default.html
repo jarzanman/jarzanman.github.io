@@ -14,15 +14,16 @@
     {% else %}
     <title>{{ site.title }}</title>
     {% endif %}
-    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}' />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?" />
+    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}'>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   </head>
   <body>
     {% include header.html %} {{ content }} {% include footer.html %}
-    <script src="../assets/anchor.js"></script>
+    <script src="../assets/js/anchor.js"></script>
 <script>
   anchors.options.icon = '¶';
    anchors.add();
 </script>
+    <script src="../assets/js/dropcap.js"></script>
   </body>
 </html>
