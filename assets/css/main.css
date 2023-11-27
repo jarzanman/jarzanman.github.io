@@ -185,23 +185,24 @@ Make elements with the HTML hidden attribute stay hidden by default.
 */
 [hidden] { display: none; }
 
-@font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "Libre Baskerville"; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "Georgia"; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; }
-@font-face { font-display: swap; font-family: "Metdemo-BLMG"; src: url("./fonts/Metdemo-BLMG.ttf"); }
-@font-face { font-display: swap; font-family: "NotoSerif-SC"; src: url("./fonts/NotoSerif-SC.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "GoudyIni"; font-style: normal; src: url("./fonts/GoudyIni.woff") format("woff2"); }
-@font-face { font-display: swap; font-family: "TypographerWoodcut"; font-style: normal; src: url("./fonts/TypographerWoodcut.ttf") format("woff2"); }
-@font-face { font-display: swap; font-family: "CheshireInitials"; font-style: normal; src: url("./fonts/CheshireInitials.ttf") format("woff2"); }
-@font-face { font-display: swap; font-family: "Exotica"; font-style: normal; src: url("./fonts/exotica.woff2") format("woff2"); }
-body { background: #111; color: #fff; font-family: "Libre Baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
+@font-face { font-display: swap; font-family: 'libre-baskerville'; font-style: normal; font-weight: 400; src: url("./fonts/libre-baskerville-regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'libre-baskerville'; font-style: italic; font-weight: 400; src: url("./fonts/libre-baskerville-italic.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'libre-baskerville'; font-style: normal; font-weight: 700; src: url("./fonts/libre-baskerville-700.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Georgia'; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; }
+@font-face { font-display: swap; font-family: 'music'; src: url("./fonts/music.ttf"); }
+@font-face { font-display: swap; font-family: 'noto-sc'; src: url("./fonts/noto-sc.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'goudy'; font-style: normal; src: url("./fonts/goudy.woff") format("woff2"); }
+@font-face { font-display: swap; font-family: 'woodcut'; font-style: normal; src: url("./fonts/woodcut.ttf") format("woff2"); }
+@font-face { font-display: swap; font-family: 'cheshire'; font-style: normal; src: url("./fonts/cheshire.ttf") format("woff2"); }
+@font-face { font-display: swap; font-family: 'exotica'; font-style: normal; src: url("./fonts/exotica.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'floral'; font-style: normal; src: url("./fonts/floral.ttf") format("woff2"); }
+body { background: #111; color: #fff; font-family: "libre-baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
 
 p, ol > li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
 
 .subtitle { font-size: 80%; color: #ddd; }
 
-.titleblock + p::first-line { font-family: "NotoSerif-SC"; font-size: 1.5rem; line-height: 1.4; }
+.dcp::first-line { font-family: "noto-sc"; font-size: 1.5rem; line-height: 1.4; }
 
 pre { overflow: auto; padding: 0.5em; line-height: 130%; }
 
@@ -215,7 +216,7 @@ code, pre { background: #333; font-family: monospace; font-size: 95%; }
 .important::before { content: "!"; font-size: 3rem; font-style: italic; }
 .important > div > p { margin: 0.6125em 0; }
 
-.mustext { font-family: "Metdemo-BLMG"; }
+.mustext { font-family: "music"; }
 
 blockquote { margin-left: 2rem; }
 
@@ -232,10 +233,10 @@ ol > li { counter-increment: ol; position: relative; }
 ol > li::before { position: absolute; content: counter(ol) ")"; margin-left: -1.5em; }
 
 .blogli { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-.blogli > .subtitle { text-align: right; margin-left: 3rem; }
-.blogli > a { background: none; text-shadow: none; }
-.blogli > a:visited, .blogli > a:link { color: #fff; }
-.blogli > a::hover { color: #777; }
+.blogli .subtitle { text-align: right; margin-left: 3rem; }
+.blogli a { background: none; text-shadow: none; }
+.blogli a:visited, .blogli a:link { color: #fff; }
+.blogli a:hover { color: #777; }
 
 @media (max-width: 634px) { body { font-size: 1.125rem; }
   .titleblock + p::first-line { font-size: 1.375rem; } }
@@ -243,13 +244,15 @@ ol > li::before { position: absolute; content: counter(ol) ")"; margin-left: -1.
   .titleblock + p::first-line { font-size: 1.25rem; } }
 .dc { float: left; }
 
-.goudyini { font-family: 'GoudyIni'; font-size: 5.65em; line-height: 0.8; padding: 0 0.065em 0 0; margin-left: 0.01em; }
+.goudy { font-family: 'goudy'; font-size: 5.65em; line-height: 0.8; padding: 0 0.065em 0 0; margin-left: 0.01em; }
 
-.typographerwoodcut { font-family: 'TypographerWoodcut'; font-size: 4.75em; line-height: 0.94254; padding: 0 0.055em 0 0; margin-left: -0.05em; }
+.woodcut { font-family: 'woodcut'; font-size: 4.75em; line-height: 0.94254; padding: 0 0.055em 0 0; margin-left: -0.05em; }
 
-.cheshireinitials { font-family: 'CheshireInitials'; margin-bottom: -0.3em; line-height: 1.12; padding: 0 0.055em 0 0; font-size: 5.25em; }
+.cheshire { font-family: 'cheshire'; margin-bottom: -0.3em; line-height: 1.12; padding: 0 0.055em 0 0; font-size: 5.25em; }
 
-.exotica { font-family: 'Exotica'; font-size: 5.3em; line-height: 1.12; padding: 0 0.1em 0 0; margin-bottom: -0.3em; }
+.exotica { font-family: 'exotica'; font-size: 5.3em; line-height: 1.12; padding: 0 0.1em 0 0; margin-bottom: -0.3em; }
+
+.floral { font-family: 'floral'; font-size: 6.63em; line-height: 0.9; padding: 0 0.08em 0 0; margin-bottom: -0.3em; margin-left: -.01em; }
 
 header, .sitefooter { margin: 1.5rem 0 1.5rem 0; }
 
@@ -274,13 +277,15 @@ a, u { text-decoration: none; background: linear-gradient(#111, #111), linear-gr
 h1 { font-size: 120%; font-weight: 700; }
 h1 + .gallerydate { margin-bottom: 1.8rem; }
 
-h2 { font-family: "NotoSerif-SC"; font-size: 1.75rem; line-height: 1; margin-top: 4.5rem; border-bottom: 1px dotted white; }
+h2 { font-family: "noto-sc"; font-size: 1.75rem; line-height: 1; margin-top: 4.5rem; border-bottom: 1px dotted white; }
+h2 .anchorjs:hover::after { float: right; }
 
-h2 .anchorjs-link { color: #bbb; background: 0; float: right; }
+.anchorjs:link, .anchorjs:visited { color: white; background: 0; }
 
-h3 .anchorjs-link, h4 .anchorjs-link { color: #bbb; background: 0; }
+.anchorjs:hover { color: #bbb; }
+.anchorjs:hover::after { content: '\00A7'; margin-left: .5em; font-size: 90%; }
 
-h3 { font-family: "NotoSerif-SC"; font-size: 125%; margin-bottom: -0.75em; }
+h3 { font-family: "noto-sc"; font-size: 125%; margin-bottom: -0.75em; }
 
 h4 { font-weight: 700; margin-bottom: -1em; }
 
