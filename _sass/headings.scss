@@ -6,23 +6,29 @@
   }
 }
 h2 {
-  font-family: "NotoSerif-SC";
+  font-family: "noto-sc";
   font-size: 1.75rem;
   line-height: 1;
   margin-top: 4.5rem;
   border-bottom: 1px dotted white;
+  .anchorjs:hover::after {
+    float: right;
+  }
 }
-h2 .anchorjs-link {
-  color: #bbb;
+.anchorjs:link, .anchorjs:visited {
+  color: white;
   background: 0;
-  float: right;
 }
-h3 .anchorjs-link, h4 .anchorjs-link {
+.anchorjs:hover {
   color: #bbb;
-  background: 0;
+  &::after {
+    content: '\00A7';
+    margin-left: .5em;
+    font-size: 90%;
+  }
 }
 h3 {
-  font-family: "NotoSerif-SC";
+  font-family: "noto-sc";
   font-size: 125%;
   margin-bottom: -0.75em;
 }

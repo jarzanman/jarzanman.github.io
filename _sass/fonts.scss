@@ -1,71 +1,80 @@
 @font-face {
   font-display: swap;
-  font-family: "Libre Baskerville";
+  font-family: 'libre-baskerville';
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-regular.woff2")
-    format("woff2");
+  src: url('./fonts/libre-baskerville-regular.woff2')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "Libre Baskerville";
+  font-family: 'libre-baskerville';
   font-style: italic;
   font-weight: 400;
-  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-italic.woff2")
-    format("woff2");
+  src: url('./fonts/libre-baskerville-italic.woff2')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "Libre Baskerville";
+  font-family: 'libre-baskerville';
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/libre-baskerville-v14-latin_latin-ext-700.woff2")
-    format("woff2");
+  src: url('./fonts/libre-baskerville-700.woff2')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "Georgia";
-  src: local("Georgia");
+  font-family: 'Georgia';
+  src: local('Georgia');
   ascent-override: 99.8%;
   descent-override: 29.5%;
 }
 @font-face {
   font-display: swap;
-  font-family: "Metdemo-BLMG";
-  src: url("./fonts/Metdemo-BLMG.ttf");
+  font-family: 'music';
+  src: url('./fonts/music.ttf');
 }
 @font-face {
   font-display: swap;
-  font-family: "NotoSerif-SC";
-  src: url("./fonts/NotoSerif-SC.woff2")
-    format("woff2");
+  font-family: 'noto-sc';
+  src: url('./fonts/noto-sc.woff2')
+    format('woff2');
 }
+
 // dropcaps
+
 @font-face {
   font-display: swap;
-  font-family: "GoudyIni";
+  font-family: 'goudy';
   font-style: normal;
-  src: url("./fonts/GoudyIni.woff")
-    format("woff2");
+  src: url('./fonts/goudy.woff')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "TypographerWoodcut";
+  font-family: 'woodcut';
   font-style: normal;
-  src: url("./fonts/TypographerWoodcut.ttf")
-    format("woff2");
+  src: url('./fonts/woodcut.ttf')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "CheshireInitials";
+  font-family: 'cheshire';
   font-style: normal;
-  src: url("./fonts/CheshireInitials.ttf")
-    format("woff2");
+  src: url('./fonts/cheshire.ttf')
+    format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "Exotica";
+  font-family: 'exotica';
   font-style: normal;
-  src: url("./fonts/exotica.woff2")
-    format("woff2");
+  src: url('./fonts/exotica.woff2')
+    format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'floral';
+  font-style: normal;
+  src: url('./fonts/floral.ttf')
+    format('woff2');
 }
