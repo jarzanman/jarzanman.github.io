@@ -38,13 +38,9 @@ I should not like to think that some demigod had come before me and picked out s
 
 <p>A problem that comes with short line length is the ragged right edge. I wanted to go all the way in emulating the typesetting of a book, but justified text on the web is just not as nuanced as justified text in print. I opted for left-aligned text with hyphenation to tame the right edge as much as possible.</p>
 <h4 id="fonts">Fonts</h4>
-<p>As for fonts, the body text uses <a href="https://www.impallari.com/revivals/baskerville/" target="_blank">Libre Baskerville</a> by Impallari Type, and the smallcaps use <a href="https://fonts.google.com/noto/specimen/Noto+Serif" target="_blank">Noto Serif</a> by Google.</p>
+<p>As for fonts, the body text uses <a href="https://www.impallari.com/revivals/baskerville/" target="_blank">Libre Baskerville</a> by Impallari Type, and the smallcaps use <a href="https://fonts.google.com/noto/specimen/Noto+Serif" target="_blank">Noto Serif</a> by Google. The dropcaps use <a href="https://www.dafont.com/cheshire-initials.font" target="_blank">Cheshire Initials</a> by House of Lime. In the future, I might expand my selection of dropcap fonts to fit different types of articles like <a href="https://gwern.net/dropcap#drop-cap-implementation" target="_blank">Gwern</a> does.</p>
 
 <p>I was met with browser incompatibility issues when trying to select the smallcaps font variant for Noto Serif using CSS, so I ended up using <a href="https://fontforge.org/en-US/" target="_blank">FontForge</a> to map the smallcaps characters onto the lowercase letters. I thank <a href="https://v4.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html" target="_blank">Chris Krycho</a> for that idea.</p>
-
-<p>My posts display random dropcaps for every refresh, a fun little feature I wrote while learning JavaScript. As of now, I’m using <a href="https://www.fontsquirrel.com/fonts/exotica" target="_blank">Exotica</a> by West Wind Fonts, <a href="https://www.dafont.com/cheshire-initials.font" target="_blank">Cheshire Initials</a> by House of Lime, and <a href="https://www.1001freefonts.com/floral-capitals.font" target="_blank">Floral Capitals</a> by Vladimir Nikolic. I’ve also got <a href="https://www.1001fonts.com/goudy-initialen-font.html" target="_blank">Goudy Initialen</a> and <a href="https://www.1001fonts.com/typographerwoodcutinitialsone-font.html" target="_blank">Typographer Woodcut Initials One</a>, both by Dieter Steffmann.</p>
-
-<p>In the future, I plan to expand my selection of dropcap fonts to fit different types of articles, an idea I’m taking from the wonderful <a href="https://gwern.net/dropcap#drop-cap-implementation" target="_blank">Gwern</a>.</p>
 <h4 id="underlines">Underlines</h4>
 <p>The most engineered aspect of this site’s typography is underlining. Regular underlines don’t clear <a href="https://en.wikipedia.org/wiki/Descender" target="_blank">descenders</a> very well, so there’s a wild CSS solution to remedy that:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a, u {
@@ -64,7 +60,6 @@ I should not like to think that some demigod had come before me and picked out s
 </footer>
 
     <script src="../assets/js/anchor.js"></script>
-    <script src="../assets/js/dropcap.js"></script>
     <script src="../assets/js/dcpsc.js"></script>
   </body>
 </html>
