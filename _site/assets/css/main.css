@@ -191,11 +191,19 @@ Make elements with the HTML hidden attribute stay hidden by default.
 @font-face { font-display: swap; font-family: 'Georgia'; src: local("Georgia"); ascent-override: 99.8%; descent-override: 29.5%; }
 @font-face { font-display: swap; font-family: 'music'; src: url("./fonts/music.ttf"); }
 @font-face { font-display: swap; font-family: 'noto-sc'; src: url("./fonts/noto-sc.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: 'goudy'; font-style: normal; src: url("./fonts/goudy.woff") format("woff2"); }
-@font-face { font-display: swap; font-family: 'woodcut'; font-style: normal; src: url("./fonts/woodcut.ttf") format("woff2"); }
+/*
+@font-face { font-display: swap; font-family: 'goudy'; font-style: normal; src: url('./fonts/goudy.woff') format('woff2');
+}
+@font-face { font-display: swap; font-family: 'woodcut'; font-style: normal; src: url('./fonts/woodcut.ttf') format('woff2');
+}
+*/
 @font-face { font-display: swap; font-family: 'cheshire'; font-style: normal; src: url("./fonts/cheshire.ttf") format("woff2"); }
-@font-face { font-display: swap; font-family: 'exotica'; font-style: normal; src: url("./fonts/exotica.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: 'floral'; font-style: normal; src: url("./fonts/floral.ttf") format("woff2"); }
+/*
+@font-face { font-display: swap; font-family: 'exotica'; font-style: normal; src: url('./fonts/exotica.woff2') format('woff2');
+}
+@font-face { font-display: swap; font-family: 'floral'; font-style: normal; src: url('./fonts/floral.ttf') format('woff2');
+}
+*/
 body { background: #111; color: #fff; font-family: "libre-baskerville", "Georgia", ui-serif, serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.25rem; width: 80vw; max-width: 40rem; margin: auto; word-wrap: break-word; font-kerning: normal; hyphens: auto; }
 
 p, ol > li { line-height: 1.6875; margin: 1.25em 0; position: relative; }
@@ -242,18 +250,19 @@ ol > li::before { position: absolute; content: counter(ol) ")"; margin-left: -1.
   .dcp::first-line { font-size: 1.375rem; } }
 @media (max-width: 400px) { body { font-size: 1rem; }
   .dcp::first-line { font-size: 1.25rem; } }
-.dc { float: left; }
+/*
+.goudy { font-family: 'goudy'; font-size: 5.09em; line-height: 0.98; padding: 0 0.065em 0 0; margin-left: 0.01em;
+}
+.woodcut { font-family: 'woodcut'; font-size: 4.2em; line-height: 1.18; padding: 0 0.055em 0 0; margin-left: -0.05em;
+} */
+.dc { font-family: 'cheshire'; margin-bottom: -0.3em; line-height: 1.18; padding: 0 0.055em 0 0; font-size: 5.1em; float: left; }
 
-.goudy { font-family: 'goudy'; font-size: 5.09em; line-height: 0.98; padding: 0 0.065em 0 0; margin-left: 0.01em; }
-
-.woodcut { font-family: 'woodcut'; font-size: 4.2em; line-height: 1.18; padding: 0 0.055em 0 0; margin-left: -0.05em; }
-
-.cheshire { font-family: 'cheshire'; margin-bottom: -0.3em; line-height: 1.18; padding: 0 0.055em 0 0; font-size: 5.1em; }
-
-.exotica { font-family: 'exotica'; font-size: 5.16em; line-height: 1.16; padding: 0 0.1em 0 0; margin-bottom: -0.3em; }
-
-.floral { font-family: 'floral'; font-size: 6.1em; line-height: 1.024; padding: 0 0.08em 0 0; margin-bottom: -0.3em; margin-left: -.01em; }
-
+/*
+.exotica { font-family: 'exotica'; font-size: 5.16em; line-height: 1.16; padding: 0 0.1em 0 0; margin-bottom: -0.3em;
+}
+.floral { font-family: 'floral'; font-size: 6.1em; line-height: 1.024; padding: 0 0.08em 0 0; margin-bottom: -0.3em; margin-left: -.01em;
+}
+*/
 header, .sitefooter { margin: 1.5rem 0 1.5rem 0; }
 
 nav, .sitefooter { display: flex; flex: 1 1 100%; gap: 0.3em; flex-flow: row wrap; }

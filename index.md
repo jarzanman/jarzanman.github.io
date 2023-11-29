@@ -21,13 +21,9 @@ The most important thing, to me, is keeping line length short. This keeps the pa
 
 A problem that comes with short line length is the ragged right edge. I wanted to go all the way in emulating the typesetting of a book, but justified text on the web is just not as nuanced as justified text in print. I opted for left-aligned text with hyphenation to tame the right edge as much as possible.
 #### Fonts
-As for fonts, the body text uses [Libre Baskerville](https://www.impallari.com/revivals/baskerville/){:target="_blank"} by Impallari Type, and the smallcaps use [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif){:target="_blank"} by Google.
+As for fonts, the body text uses [Libre Baskerville](https://www.impallari.com/revivals/baskerville/){:target="_blank"} by Impallari Type, and the smallcaps use [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif){:target="_blank"} by Google. The dropcaps use [Cheshire Initials](https://www.dafont.com/cheshire-initials.font){:target="_blank"} by House of Lime. In the future, I might expand my selection of dropcap fonts to fit different types of articles like [Gwern](https://gwern.net/dropcap#drop-cap-implementation){:target="_blank"} does.
 
 I was met with browser incompatibility issues when trying to select the smallcaps font variant for Noto Serif using CSS, so I ended up using [FontForge](https://fontforge.org/en-US/){:target="_blank"} to map the smallcaps characters onto the lowercase letters. I thank [Chris Krycho](https://v4.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html){:target="_blank"} for that idea.
-
-My posts display random dropcaps for every refresh, a fun little feature I wrote while learning JavaScript. As of now, I'm using [Exotica](https://www.fontsquirrel.com/fonts/exotica){:target="_blank"} by West Wind Fonts, [Cheshire Initials](https://www.dafont.com/cheshire-initials.font){:target="_blank"} by House of Lime, and [Floral Capitals](https://www.1001freefonts.com/floral-capitals.font){:target="_blank"} by Vladimir Nikolic. I've also got [Goudy Initialen](https://www.1001fonts.com/goudy-initialen-font.html){:target="_blank"} and [Typographer Woodcut Initials One](https://www.1001fonts.com/typographerwoodcutinitialsone-font.html){:target="_blank"}, both by Dieter Steffmann.
-
-In the future, I plan to expand my selection of dropcap fonts to fit different types of articles, an idea I'm taking from the wonderful [Gwern](https://gwern.net/dropcap#drop-cap-implementation){:target="_blank"}.
 #### Underlines
 The most engineered aspect of this site's typography is underlining. Regular underlines don't clear [descenders](https://en.wikipedia.org/wiki/Descender){:target="_blank"} very well, so there's a wild CSS solution to remedy that:
 ```
